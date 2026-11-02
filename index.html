@@ -1,184 +1,2623 @@
 <!doctype html>
 <html lang="cs">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#f4f6f1">
-  <meta name="description" content="Psychopeutická setkání s dětmi, dospívajícími a mladými dospělými, podpora rodičů a workshopy Zuzany Krásové na Dobříši.">
-  <title>Zuzana Krásová — Psychoterapie a workshopy</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
-  <style>
-    :root{--ink:#313b39;--muted:#66716c;--paper:#fbfaf6;--mist:#edf4f0;--sage:#dbe8df;--sage-deep:#567365;--rose:#d66f89;--rose-deep:#b85370;--gold:#c99e54;--line:#dce4de;--serif:'Playfair Display',Georgia,serif;--sans:'DM Sans',Arial,sans-serif}
-    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--sans);line-height:1.7}a{color:inherit}button,a{-webkit-tap-highlight-color:transparent}.wrap{width:min(1160px,calc(100% - 48px));margin-inline:auto}.eyebrow{color:var(--rose-deep);font-size:.77rem;font-weight:600;letter-spacing:.15em;text-transform:uppercase}.serif{font-family:var(--serif);font-weight:400;letter-spacing:-.025em}h1,h2,h3,p{margin-top:0}h1{font-size:clamp(3rem,6vw,5.7rem);line-height:1.08;margin-bottom:22px}h2{font-size:clamp(2.1rem,4vw,3.5rem);line-height:1.15;margin-bottom:18px}h3{font-size:1.35rem;line-height:1.3}.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;border-radius:7px;padding:14px 22px;background:var(--rose);color:#fff;text-decoration:none;font-weight:600;box-shadow:0 8px 20px #b8537022;transition:transform .2s,background .2s}.btn:hover{background:var(--rose-deep);transform:translateY(-2px)}.btn-quiet{background:transparent;color:var(--ink);box-shadow:none;border:1px solid #b9c9be}.btn-quiet:hover{background:white;color:var(--ink)}
-    header{position:absolute;inset:0 0 auto;z-index:5}.nav{height:92px;display:flex;align-items:center;justify-content:space-between}.brand{display:flex;align-items:center;gap:12px;text-decoration:none}.brand-mark{width:43px;height:43px;border:1px solid #c9a868;border-radius:50%;display:grid;place-items:center;color:var(--gold);font-family:var(--serif);font-size:1.2rem}.brand-name{font-family:var(--serif);font-size:1.2rem;line-height:1.1}.brand-name small{display:block;font:500 .62rem var(--sans);letter-spacing:.11em;color:var(--muted);text-transform:uppercase;margin-top:4px}.nav-links{display:flex;align-items:center;gap:32px}.nav-links a{text-decoration:none;font-size:.9rem;color:#3d4743}.nav-links a:hover{color:var(--rose-deep);transform:translateY(-2px)}.nav-links .nav-cta{padding:10px 17px;border-radius:6px;color:#fff;background:var(--rose)}.menu-toggle{display:none}
-    .hero{position:relative;isolation:isolate;min-height:790px;display:grid;place-items:center;text-align:center;overflow:hidden;background:radial-gradient(ellipse at 50% 22%,#fff 0%,#f6f8f3 42%,#eaf2ed 100%)}.hero:before{content:"";position:absolute;inset:0;z-index:-1;opacity:.27;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 180 180' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.75' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.14'/%3E%3C/svg%3E")}.hero:after{content:"";position:absolute;z-index:-1;width:130%;height:120px;left:-15%;bottom:-84px;background:var(--paper);border-radius:50% 50% 0 0/90% 90% 0 0}.hero-inner{width:min(880px,calc(100% - 40px));padding-top:80px}.hero .eyebrow{margin-bottom:28px}.hero h1{max-width:900px;margin-inline:auto}.hero h1 em{font-style:normal;color:var(--sage-deep)}.hero-copy{max-width:690px;margin:0 auto 32px;font-size:clamp(1rem,1.45vw,1.18rem);color:#58625e}.hero-actions{display:flex;gap:13px;justify-content:center;flex-wrap:wrap}.hero-art{position:absolute;right:7%;bottom:68px;width:min(240px,20vw);opacity:.72;pointer-events:none}.hero-art.left{right:auto;left:7%;bottom:78px;width:min(170px,15vw);opacity:.62}.hero-note{position:absolute;bottom:67px;left:50%;transform:translateX(-50%);font-family:var(--serif);font-style:italic;color:var(--rose-deep);font-size:1.18rem;white-space:nowrap}
-    .intro{padding:120px 0 100px}.intro-grid{display:grid;grid-template-columns:1fr 1fr;gap:11%;align-items:center}.intro-visual{min-height:350px;position:relative;border-radius:48% 52% 49% 51%;background:linear-gradient(145deg,#f6e8e7,#edf3ec 60%,#dfeae2);display:grid;place-items:center;overflow:hidden}.intro-visual:before,.intro-visual:after{content:"";position:absolute;border:1px solid #c6ac7444;border-radius:50%}.intro-visual:before{width:78%;height:75%;transform:rotate(-12deg)}.intro-visual:after{width:92%;height:89%;transform:rotate(9deg)}.visual-caption{position:absolute;bottom:36px;left:0;right:0;text-align:center;color:var(--rose-deep);font:italic 1.7rem var(--serif)}.sun-art{width:58%;max-width:240px}.intro-copy p{color:var(--muted)}.intro-copy .lead{font-size:1.16rem;color:var(--ink)}.tiny-link{display:inline-flex;align-items:center;gap:9px;margin-top:8px;color:var(--rose-deep);font-weight:600;text-decoration:none}
-    .offer{padding:94px 0 112px;background:#f2f5f0}.section-head{text-align:center;max-width:690px;margin:0 auto 54px}.section-head p{color:var(--muted)}.services{display:grid;grid-template-columns:repeat(2,1fr);gap:24px}.service{background:#fffdf9;padding:34px 36px;border:1px solid #e5e9e3;border-radius:5px;position:relative}.service-icon{width:45px;height:45px;border-radius:50%;background:#f6e9e8;color:var(--rose-deep);display:grid;place-items:center;font-size:1.2rem;margin-bottom:19px}.service p{color:var(--muted);margin-bottom:0}.service-meta{margin-top:20px;padding-top:17px;border-top:1px solid var(--line);font-size:.91rem;color:#53645a}.service-meta strong{color:var(--ink)}
-    .approach{padding:115px 0}.approach-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:10%;align-items:center}.approach-copy>p{color:var(--muted)}.approach-list{list-style:none;padding:0;margin:26px 0 0;display:grid;gap:15px}.approach-list li{display:flex;gap:13px;align-items:flex-start}.approach-list span{display:grid;place-items:center;width:24px;height:24px;flex:0 0 auto;background:#e7efe8;border-radius:50%;color:var(--sage-deep);font-size:.78rem;margin-top:2px}.approach-art{position:relative;min-height:410px;border-radius:48% 52% 8px 8px;background:linear-gradient(180deg,#e9f2ee,#f6efe9);overflow:hidden;display:flex;align-items:flex-end;justify-content:center}.hill{position:absolute;left:-5%;right:-5%;height:50%;bottom:0;background:#cadccf;border-radius:48% 52% 0 0 / 26% 34% 0 0;transform:rotate(-3deg)}.hill.two{height:34%;background:#b8d0c1;left:20%;right:-20%;border-radius:55% 40% 0 0/55% 30% 0 0;transform:rotate(3deg)}.path{position:absolute;bottom:-48px;left:39%;width:140px;height:240px;border-left:2px dashed #fff9;border-radius:50%;transform:rotate(25deg)}.little-sun{position:absolute;top:54px;right:70px;width:65px;height:65px;border-radius:50%;background:#e8c987;box-shadow:0 0 0 13px #e8c98733}.art-phrase{position:absolute;top:49px;left:45px;color:#526c5d;font:italic 1.55rem var(--serif);max-width:210px}.workshops{padding:106px 0 120px;background:#f9f5ef}.workshop-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.workshop{background:#fff;border:1px solid #ebe5dc;padding:30px 28px 28px;display:flex;flex-direction:column;min-height:475px}.workshop:nth-child(2){transform:translateY(18px)}.workshop-number{font:italic 2.5rem var(--serif);color:#c6a86d;margin-bottom:14px}.workshop h3{font-family:var(--serif);font-weight:500;font-size:1.55rem}.workshop p{font-size:.94rem;color:var(--muted)}.workshop ul{padding-left:19px;color:#55615b;font-size:.9rem;margin:0 0 23px}.workshop li{margin:.35rem 0}.workshop .tiny-link{margin-top:8px}.workshop details summary{cursor:pointer;font:500 1.3rem var(--serif);list-style:none}.workshop details summary::-webkit-details-marker{display:none}.workshop details summary:after{content:"＋";float:right;color:var(--rose-deep);font:400 1.2rem var(--sans)}.workshop details[open] summary:after{content:"−"}.workshop details p{margin:16px 0 0;color:var(--muted)}.workshop-note{text-align:center;color:var(--muted);font-size:.92rem;margin:55px auto 0;max-width:670px}
-    .contact{padding:105px 0 100px;text-align:center;background:radial-gradient(ellipse at center,#f4e8e7,#f7f3eb 66%)}.contact-inner{max-width:740px;margin:auto}.contact p{color:var(--muted);max-width:600px;margin:0 auto 27px}.contact-row{display:flex;justify-content:center;gap:14px;flex-wrap:wrap}.contact-details{display:flex;justify-content:center;gap:28px;flex-wrap:wrap;margin-top:36px;color:#59655f;font-size:.95rem}.contact-details a{text-decoration:none}.contact-details a:hover{color:var(--rose-deep)}footer{padding:26px 0;background:#eaf0ea;color:#647069;font-size:.82rem}.footer-inner{display:flex;justify-content:space-between;gap:18px;align-items:center}.footer-brand{font-family:var(--serif);color:var(--ink);font-size:1.08rem}
-    @media(max-width:800px){.nav{height:76px}.nav-links{gap:18px}.nav-links a{font-size:.82rem}.hero{min-height:740px}.hero-art{right:3%;width:150px}.hero-art.left{left:3%;width:120px}.intro-grid,.approach-grid{gap:8%}.intro-visual{min-height:300px}.workshop-grid{gap:13px}.workshop{padding:25px 21px}.workshop:nth-child(2){transform:none}}
-    @media(max-width:620px){.wrap{width:min(100% - 36px,500px)}.nav{height:70px}.brand-mark{width:37px;height:37px}.brand-name{font-size:1rem}.nav-links{display:none;position:absolute;top:62px;left:18px;right:18px;padding:18px;background:#fffdf9;box-shadow:0 12px 30px #24352c18;border:1px solid var(--line);border-radius:7px;flex-direction:column;align-items:stretch;gap:4px}.nav-links.open{display:flex}.nav-links a{padding:9px 10px;font-size:.95rem}.nav-links .nav-cta{text-align:center;margin-top:6px}.menu-toggle{display:flex;border:1px solid var(--line);background:#fffdf9;border-radius:5px;width:42px;height:42px;align-items:center;justify-content:center;color:var(--ink);font-size:1.3rem}.hero{min-height:730px}.hero-inner{padding-top:60px}.hero .eyebrow{font-size:.68rem;margin-bottom:20px}.hero h1{font-size:clamp(2.75rem,12vw,4.2rem)}.hero-copy{font-size:1rem}.hero-art{width:112px;bottom:54px;right:0}.hero-art.left{width:90px;bottom:57px;left:0}.hero-note{bottom:41px;font-size:1.02rem}.intro{padding:83px 0}.intro-grid,.approach-grid{grid-template-columns:1fr;gap:38px}.intro-visual{min-height:270px;width:min(100%,350px);margin:auto}.intro-copy{text-align:left}.offer,.workshops{padding:78px 0}.section-head{margin-bottom:35px}.services,.workshop-grid{grid-template-columns:1fr}.service{padding:28px}.approach{padding:82px 0}.approach-art{min-height:330px;order:2}.workshop{min-height:0;padding:27px}.workshop-number{font-size:2rem}.workshop-note{margin-top:30px}.contact{padding:80px 0}.contact-details{gap:12px 22px}.footer-inner{flex-direction:column;text-align:center}.footer-inner span:last-child{max-width:280px}}
-    /* Jemný pohyb a hloubka, které nechávají obsah v hlavní roli. */
-    header{position:fixed;transition:background .35s,box-shadow .35s,backdrop-filter .35s}
-    body.is-scrolled header{background:#fbfaf6df;backdrop-filter:blur(14px);box-shadow:0 1px 18px #263a2c0d}
-    .scroll-progress{position:fixed;z-index:20;top:0;left:0;width:100%;height:3px;pointer-events:none}
-    .scroll-progress span{display:block;width:100%;height:100%;background:linear-gradient(90deg,#d66f89,#e8c987,#89a998);transform:scaleX(var(--progress,0));transform-origin:left;will-change:transform}
-    .hero-inner{animation:hero-enter 1s cubic-bezier(.2,.7,.2,1) both}
-    .hero-art{animation:float-gently 7s ease-in-out infinite;transform-origin:center}
-    .hero-art.left{animation-delay:-3.2s}
-    .hero h1 em{position:relative;display:inline-block}
-    .hero h1 em:after{content:"";position:absolute;height:2px;left:5%;right:5%;bottom:-8px;background:linear-gradient(90deg,transparent,#d6ad69,transparent);transform:scaleX(0);transform-origin:center;animation:underline-in .9s .55s ease-out forwards}
-    .btn{position:relative;overflow:hidden;isolation:isolate;transition:transform .28s cubic-bezier(.2,.8,.2,1),background .25s,box-shadow .25s}
-    .btn:before{content:"";position:absolute;z-index:-1;inset:-50% auto -50% -45%;width:35%;transform:skewX(-20deg);background:linear-gradient(90deg,transparent,#ffffff55,transparent);transition:left .55s ease}
-    .btn:hover{transform:translateY(-3px);box-shadow:0 12px 28px #b8537033}
-    .btn:hover:before{left:125%}
-    .tiny-link span{display:inline-block;transition:transform .2s ease}
-    .tiny-link:hover span{transform:translateX(5px)}
-    .service,.workshop{transition:transform .32s cubic-bezier(.2,.8,.2,1),box-shadow .32s,border-color .32s}
-    .service:hover,.workshop:hover{transform:translateY(-7px);border-color:#d6c4a1;box-shadow:0 18px 42px #33483a12}
-    .service-icon{transition:transform .35s,background .35s}
-    .service:hover .service-icon{transform:rotate(-8deg) scale(1.08);background:#f7e4e7}
-    .intro-visual{transition:transform .6s cubic-bezier(.2,.8,.2,1),box-shadow .6s}
-    .intro-visual:hover{transform:translateY(-5px) rotate(-1deg);box-shadow:0 24px 55px #697e6c16}
-    .sun-art{animation:sun-drift 8s ease-in-out infinite}
-    .little-sun{animation:sun-glow 4.5s ease-in-out infinite}
-    .path{animation:path-draw 2.6s .4s ease-out both}
-    .hero-note{animation:note-in .7s 1s ease-out both}
-    .motion-ready .reveal{opacity:0;transform:translateY(24px);transition:opacity .75s ease,transform .75s cubic-bezier(.2,.7,.2,1);transition-delay:var(--reveal-delay,0ms)}
-    .motion-ready .reveal.is-visible{opacity:1;transform:translateY(0)}
-    .approach-art.reveal{transform:translateY(24px) scale(.985)}
-    .approach-art.reveal.is-visible{transform:translateY(0) scale(1)}
-    @keyframes hero-enter{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:translateY(0)}}
-    @keyframes float-gently{0%,100%{translate:0 0;rotate:0deg}50%{translate:0 -10px;rotate:1deg}}
-    @keyframes underline-in{to{transform:scaleX(1)}}
-    @keyframes sun-drift{0%,100%{transform:translateY(0) rotate(-1deg)}50%{transform:translateY(-7px) rotate(1deg)}}
-    @keyframes sun-glow{0%,100%{box-shadow:0 0 0 13px #e8c98733,0 0 26px #e8c98722}50%{box-shadow:0 0 0 20px #e8c98722,0 0 44px #e8c98733}}
-    @keyframes path-draw{from{clip-path:inset(100% 0 0 0)}to{clip-path:inset(0)}}
-    @keyframes note-in{from{opacity:0;transform:translate(-50%,8px)}to{opacity:1;transform:translate(-50%,0)}}
-    @media(max-width:620px){.hero h1 em:after{bottom:-5px}.hero-art{animation-duration:8.5s}.service:hover,.workshop:hover{transform:translateY(-3px)}}
-    @media(max-width:800px){.nav-links{display:none;position:absolute;top:68px;left:24px;right:24px;padding:16px;background:#fffdf9;box-shadow:0 12px 30px #24352c18;border:1px solid var(--line);border-radius:7px;flex-direction:column;align-items:stretch;gap:3px}.nav-links.open{display:flex}.nav-links a{padding:8px 10px;font-size:.92rem}.nav-links .nav-cta{text-align:center;margin-top:4px}.menu-toggle{display:flex}}
-    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{animation-duration:.01ms!important;animation-iteration-count:1!important;scroll-behavior:auto!important;transition-duration:.01ms!important}.motion-ready .reveal{opacity:1;transform:none}}
-    /* Layout refinements for the supplied copy */
-    .pathways{background:linear-gradient(180deg,#f2f5f0,#f8f7f1)}
-    .pathways .services{grid-template-columns:repeat(3,minmax(0,1fr));align-items:stretch}
-    .pathways .service{display:flex;flex-direction:column;min-height:250px;padding:32px 30px}
-    .pathways .service .tiny-link{margin-top:auto;padding-top:20px}
-    .prose-section .section-head{text-align:left;max-width:880px;margin:0 auto 26px}
-    .prose-section .section-head h2{max-width:750px}
-    .prose-section .section-head p{max-width:850px;font-size:1rem;line-height:1.8;color:var(--ink)}
-    .prose-section .services{grid-template-columns:1fr;max-width:880px;margin:0 auto}
-    .prose-section .service{background:transparent;border:0;border-top:1px solid var(--line);border-radius:0;padding:25px 0 0;box-shadow:none}
-    .parents-section{background:#fbfaf6}
-    .workshop-grid{max-width:920px;margin-inline:auto}
-    .workshop details{border-left:2px solid #e6d9bf;padding:4px 0 4px 20px}
-    .workshop details[open]{border-left-color:var(--rose)}
-    .workshop details summary{font-size:1.4rem;line-height:1.45;padding:5px 38px 5px 0;position:relative}
-    .workshop details summary:after{position:absolute;right:0;top:4px;width:28px;height:28px;display:grid;place-items:center;border:1px solid var(--line);border-radius:50%;font-size:1rem}
-    .workshop details p{max-width:760px;font-size:.98rem;line-height:1.75;margin:14px 0 8px}
-    .hero-note{white-space:normal;line-height:1.3;text-align:center;font-size:clamp(1.08rem,1.8vw,1.4rem)}
-    .section-head{margin-bottom:42px}
-    .section-head h2{margin-bottom:12px}
-    @media(max-width:800px){.pathways .services{grid-template-columns:1fr 1fr}.pathways .service{min-height:220px;padding:27px 24px}.workshop-grid{max-width:100%}}
-    @media(max-width:560px){.pathways .services{grid-template-columns:1fr}.pathways .service{min-height:0}.prose-section .section-head{margin-bottom:18px}.prose-section .service{padding-top:18px}.workshop{padding:20px 18px}.workshop details{padding-left:14px}.workshop details summary{font-size:1.2rem}}    body.is-scrolled header{background:#fbfaf6;box-shadow:0 5px 20px #263a2c16;backdrop-filter:blur(16px)}
-    section[id]{scroll-margin-top:100px}
-    .prose-section .section-head p,.prose-section .service p{color:#4f5b55}
-    @media(max-width:800px){section[id]{scroll-margin-top:84px}}    /* Bigger, layered motion */
-    .hero{overflow:hidden;--pointer-x:0px;--pointer-y:0px}
-    .hero-aurora{position:absolute;inset:0;z-index:0;overflow:hidden;pointer-events:none}
-    .hero-inner{position:relative;z-index:2}
-    .hero-aurora i{position:absolute;display:block;width:min(42vw,560px);aspect-ratio:1;border-radius:50%;filter:blur(55px);opacity:.28;mix-blend-mode:multiply;animation:aurora-drift 16s ease-in-out infinite alternate}
-    .hero-aurora i:nth-child(1){top:-25%;left:-12%;background:radial-gradient(circle,#e9c9cf 0,transparent 68%)}
-    .hero-aurora i:nth-child(2){right:-10%;top:2%;width:min(38vw,490px);background:radial-gradient(circle,#bfd7c7 0,transparent 70%);animation-delay:-7s}
-    .hero-aurora i:nth-child(3){left:35%;bottom:-62%;width:min(48vw,620px);background:radial-gradient(circle,#eddfbd 0,transparent 70%);animation-delay:-11s}
-    .orbit-dot{position:absolute;display:block;width:9px;height:9px;border-radius:50%;background:#d77f94;box-shadow:0 0 0 7px #d77f941c;animation:twinkle 3.5s ease-in-out infinite}
-    .orbit-dot.one{top:27%;left:18%}.orbit-dot.two{top:32%;right:19%;width:6px;height:6px;animation-delay:-1.2s}.orbit-dot.three{bottom:26%;left:27%;width:5px;height:5px;animation-delay:-2.1s}
-    .hero:after{animation:wave-breathe 12s ease-in-out infinite alternate}
-    .hero h1 em{color:transparent;background:linear-gradient(105deg,#567365 8%,#8ba28f 36%,#c37185 58%,#567365 83%);background-size:240% 100%;background-clip:text;-webkit-background-clip:text;animation:color-trail 8s ease-in-out infinite}
-    .hero-art{transform:translate(var(--pointer-x,0px),var(--pointer-y,0px)) translateY(var(--scroll-shift,0px));filter:drop-shadow(0 10px 20px #42594918);transition:filter .35s}
-    .hero-art:hover{filter:drop-shadow(0 15px 24px #42594930)}
-    .intro-visual:before{animation:orbit-slow 26s linear infinite}
-    .intro-visual:after{animation:orbit-slow 34s linear infinite reverse}
-    .intro-visual:hover .sun-art{animation-duration:3s}
-    .pathways .service{position:relative;overflow:hidden;isolation:isolate;transition:transform .5s cubic-bezier(.2,.8,.2,1),box-shadow .5s,border-color .4s}
-    .pathways .service:before{content:"";position:absolute;z-index:-1;inset:-40%;background:radial-gradient(circle at var(--spot-x,50%) var(--spot-y,50%),#e6efe8 0,transparent 46%);opacity:0;transition:opacity .45s}
-    .pathways .service:hover{transform:translateY(-10px) rotate(-.4deg);box-shadow:0 25px 55px #33483a1b}
-    .pathways .service:hover:before{opacity:1}
-    .pathways .service-icon{animation:icon-bob 4s ease-in-out infinite}
-    .pathways .service:nth-child(2) .service-icon{animation-delay:-1.2s}.pathways .service:nth-child(3) .service-icon{animation-delay:-2.3s}
-    .prose-section .section-head h2{position:relative}
-    .prose-section .section-head h2:after{content:"";display:block;width:54px;height:2px;margin-top:18px;background:linear-gradient(90deg,var(--rose),#e9c987);transform-origin:left;transform:scaleX(.35);transition:transform .7s cubic-bezier(.2,.8,.2,1)}
-    .prose-section .section-head.is-visible h2:after{transform:scaleX(1)}
-    .approach-art{transform:translate3d(var(--pointer-x,0px),var(--scroll-shift,0px),0);transition:transform .8s cubic-bezier(.2,.7,.2,1)}
-    .approach-art .hill{animation:hill-drift 10s ease-in-out infinite alternate}
-    .approach-art .hill.two{animation-duration:13s;animation-direction:alternate-reverse}
-    .approach-art .art-phrase{animation:phrase-float 6s ease-in-out infinite}
-    .workshop{transition:transform .42s cubic-bezier(.2,.8,.2,1),box-shadow .42s,border-color .4s}
-    .workshop:hover{transform:translateY(-5px);box-shadow:0 18px 40px #33483a12}
-    .workshop details summary{transition:color .25s,padding-left .35s}
-    .workshop details summary:hover,.workshop details[open] summary{color:var(--rose-deep);padding-left:6px}
-    .workshop details summary:after{transition:transform .35s,background .35s,color .35s}
-    .workshop details[open] summary:after{transform:rotate(180deg);background:var(--rose);color:white;border-color:var(--rose)}
-    .workshop details p{animation:detail-in .45s ease both}
-    .contact .btn{animation:contact-breathe 4s ease-in-out infinite}
-    .contact .btn-quiet{animation-delay:-2s}
-    .motion-ready .reveal{transform:translateY(38px) scale(.975);filter:blur(5px);transition:opacity .9s ease,transform .95s cubic-bezier(.18,.75,.24,1),filter .9s ease}
-    .motion-ready .reveal.is-visible{transform:translateY(0) scale(1);filter:blur(0)}
-    .approach-art.reveal{transform:translate3d(0,32px,0) scale(.96)}
-    .approach-art.reveal.is-visible{transform:translate3d(var(--pointer-x,0px),var(--scroll-shift,0px),0) scale(1)}
-    @keyframes aurora-drift{0%{transform:translate3d(-3%,0,0) scale(.92)}100%{transform:translate3d(7%,8%,0) scale(1.12)}}
-    @keyframes twinkle{0%,100%{opacity:.25;transform:scale(.65)}50%{opacity:.95;transform:scale(1.25)}}
-    @keyframes wave-breathe{from{border-radius:50% 50% 0 0/90% 90% 0 0;transform:translateY(0)}to{border-radius:47% 53% 0 0/86% 94% 0 0;transform:translateY(-8px)}}
-    @keyframes color-trail{0%,100%{background-position:0% 50%}50%{background-position:100% 50%}}
-    @keyframes orbit-slow{to{rotate:360deg}}
-    @keyframes icon-bob{0%,100%{translate:0 0}50%{translate:0 -5px}}
-    @keyframes hill-drift{from{translate:-5px 0}to{translate:8px -3px}}
-    @keyframes phrase-float{0%,100%{translate:0 0}50%{translate:0 -5px}}
-    @keyframes detail-in{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}
-    @keyframes contact-breathe{0%,100%{box-shadow:0 8px 20px #b8537022}50%{box-shadow:0 12px 30px #b8537040}}
-    @media(prefers-reduced-motion:reduce){.hero-aurora i,.orbit-dot,.hero:after,.hero h1 em,.intro-visual:before,.intro-visual:after,.pathways .service-icon,.approach-art .hill,.approach-art .art-phrase,.contact .btn{animation:none!important}.motion-ready .reveal{filter:none;transform:none;opacity:1}}  </style>
-</head>
-<body>
-  <div class="scroll-progress" aria-hidden="true"><span></span></div>
-  <header>
-    <nav class="nav wrap" aria-label="Hlavní navigace">
-      <a class="brand" href="#domu" aria-label="Zuzana Krásová, úvodní stránka"><span class="brand-mark" aria-hidden="true">zk</span><span class="brand-name">Zuzana Krásová<small>psychoterapie · workshopy</small></span></a>
-      <button class="menu-toggle" aria-label="Otevřít navigaci" aria-expanded="false" aria-controls="nav-links">☰</button>
-      <div class="nav-links" id="nav-links"><a href="#terapie">Setkání</a><a href="#deti">Děti, teens a mladí dospělí</a><a href="#rodice">Rodiče</a><a href="#workshopy">Workshopy</a><a href="#cena">Cena a místo</a><a href="#o-mne">O mně</a><a class="nav-cta" href="#kontakt">Kontakt</a></div>
-    </nav>
-  </header>
-  <main>
-    <section class="hero" id="domu"><div class="hero-aurora" aria-hidden="true"><i></i><i></i><i></i><span class="orbit-dot one"></span><span class="orbit-dot two"></span><span class="orbit-dot three"></span></div>
-      <svg class="hero-art left" data-parallax="0.12" viewBox="0 0 180 180" fill="none" aria-hidden="true"><path d="M28 144c32-16 54-18 77-8 19 8 31 9 49-1" stroke="#b8cdbc" stroke-width="2" stroke-linecap="round"/><path d="M50 135c15-17 24-34 27-58 18 16 26 30 28 49M74 102c-13-5-22-13-29-26 17 2 30 8 39 20M89 119c9-14 22-22 38-25-5 15-16 26-34 33" stroke="#d1b77c" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><circle cx="129" cy="48" r="16" fill="#e9c98c" fill-opacity=".7"/></svg>
-      <svg class="hero-art" data-parallax="0.2" viewBox="0 0 240 190" fill="none" aria-hidden="true"><path d="M10 153c31-12 57-11 84 0 23 9 45 8 67-2 21-10 41-11 69-2" stroke="#9fbaa7" stroke-width="2" stroke-linecap="round"/><path d="M26 154c33-26 59-36 87-29 25 7 42 2 68-17 13 20 26 34 44 46" stroke="#bfd1c4" stroke-width="1.5"/><path d="M130 119v-64m0 0c-22 13-32 28-37 48h37m0-48c18 13 27 28 32 48h-32m0-48 11 48" stroke="#738e7e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M117 119h27" stroke="#c7a864" stroke-width="3" stroke-linecap="round"/><circle cx="192" cy="46" r="18" fill="#e7c887" fill-opacity=".72"/></svg>
-      <div class="hero-inner"><div class="eyebrow">Zuzana Krásová</div><h1 class="serif">Psychoterapeutická setkání<br><em>s dětmi, dospívajícími a mladými dospělými</em></h1><p class="hero-copy">Terapie pro děti, dospívající a mladé dospělé na Dobříši. Cesta dlouhá tisíc mil začíná pod tvýma nohama.</p><div class="hero-actions"><a class="btn" href="mailto:zuzakrasova@gmail.com">Napsat e-mail</a><a class="btn btn-quiet" href="#workshopy">Workshopy</a></div></div><div class="hero-note"><br><br></div>
-    </section>
-    <section class="intro wrap" id="uvod"><div class="intro-grid"><div class="intro-visual"><svg class="sun-art" viewBox="0 0 240 240" fill="none" aria-hidden="true"><circle cx="120" cy="112" r="57" stroke="#c9a868" stroke-width="1.5"/><path d="M120 70v84M120 70c-29 17-43 37-49 64h49m0-64c25 17 37 37 43 64h-43m0-64 15 64" stroke="#899e8c" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M97 154h47M72 178c30-14 64-14 98 0" stroke="#c9a868" stroke-width="1.7" stroke-linecap="round"/><path d="M55 186c15-10 24-23 29-39 10 12 16 24 16 38m-16-19c-9-5-16-12-20-21 12 2 20 7 26 16m3 24c7-10 17-16 29-18-4 11-12 19-26 24" stroke="#d18491" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/><circle cx="173" cy="65" r="7" fill="#e8ca8d"/><circle cx="65" cy="81" r="4" fill="#d18491"/></svg><div class="visual-caption">Zuzana Krásová</div></div><div class="intro-copy"><p class="lead">V terapii se potkáváme hlavně jako lidé. Mezi mnou a dítětem je živý kontakt, který se rodí v prostoru mezi námi. S některými dětmi a mladými lidmi hodně mluvíme, s některými téměř vůbec. Tvoříme, hrajeme si, posloucháme hudbu a příběhy a necháváme tělo, aby nás vedlo. Základy mého přístupu leží v Gestaltu.</p></div></div></section>
-    <section class="offer pathways" id="terapie"><div class="wrap"><div class="section-head"><h2 class="serif">Najděte svou cestu</h2><p>Ať přicházíte s dítětem nebo dospívajícím, sami za sebe, tady začněte.</p></div><div class="services"><article class="service"><div class="service-icon" aria-hidden="true">✳</div><h3 class="serif">Děti, teens a mladí dospělí</h3><p>Terapie slovem, hrou, tvořením, pohybem - a vztahem.</p><a class="tiny-link" href="#deti">Jak to probíhá <span>→</span></a></article><article class="service"><div class="service-icon" aria-hidden="true">⌂</div><h3 class="serif">Rodiče</h3><p>Rodiče jsou vždy součástí procesu. Dostanete tipy a informace, které pomáhají porozumět, co se děje.</p><a class="tiny-link" href="#rodice">Podpora pro rodiče <span>→</span></a></article><article class="service"><div class="service-icon" aria-hidden="true">✧</div><h3 class="serif">Workshopy a besedy</h3><p>První psychická pomoc, Psychoterapie zblízka a Tvořivé nástroje pro svět dětí.</p><a class="tiny-link" href="#workshopy">Témata workshopů <span>→</span></a></article></div></div></section>
-    <section class="approach" id="pristup"><div class="wrap approach-grid"><div class="approach-copy"><div class="eyebrow">Terapie jako setkání dvou lidí</div><h2 class="serif">Terapie jako setkání dvou lidí</h2><p>Rodíme se do světa, který považujeme za normální. Je to svět krásný, multidimenzionální, plný magie. Zároveň v mnoha ohledech bolavý a raněný. A tak si každý neseme svá zranění.</p><p>V terapii se s dětmi, teenagery i mladými dospělými potkáváme hlavně jako lidé – mezi mnou a jimi je živý kontakt, který se rodí v prostoru mezi námi. Do našeho společného kontaktu vstupuje prožívání nás obou.</p><p>Věřím v moudrost cesty každého z nás.</p><p>Náš život je perfektní přesně takový, jaký je. I když to někdy vypadá, že je dokonalosti na hony vzdálený… Když se objeví těžkost, nesrovnalost, bolest, pak volá po tom, abychom se jí otevřeli a přijali její učení.</p><p>Prostor a pozornost si zaslouží stav, do kterého směřujeme. Ale hlavně to, co je právě teď a co se chce naplno projevit.</p></div><div class="approach-art" data-parallax="0.08" aria-label="Ilustrace cesty přes zelené kopce za sluncem"><div class="little-sun"></div><div class="art-phrase">Věřím v moudrost cesty každého z nás.</div><div class="hill"></div><div class="hill two"></div><div class="path"></div></div></div></section><section class="offer prose-section children-section" id="deti"><div class="wrap"><div class="section-head"><div class="eyebrow">Děti a mladí lidé</div><h2 class="serif">Podpora pro děti a mladé lidi</h2><p>Místo v terapii má cokoli, co se objeví. Signály těla, které děti a mladé lidi obtěžují (např. psychosomatické bolesti, tiky). Úzkosti. Zmatek a nejasnost. Pocity viny a studu. Zuřivost a záchvaty vzteku. Myšlenky na sebevraždu. Pocity smutku a osamocení. Otupělost. Křivda. Závist. Nechuť. A také ticho. Prázdno. Radost. Legrace.</p><p>To, co se objevuje tady a teď, není náhoda. A tak tomu dáváme prostor, trpělivost a pozornost.</p></div><div class="services"><article class="service"><p>Dítě nebo mladý člověk má šanci se v terapii zažít jinak a nově chápat sám sebe. Buduje důvěru ve své tělo a v jeho signály. Své emoce vnímá naplno a zároveň se jim nepoddává. Jsou pro něj informací, začíná je používat jako ukazatele na cestě. Nachází oporu sám v sobě a staví se plněji do života a do vztahů.</p><p>Každý má svůj čas. Svůj rytmus. Svoji cestu.</p><p>S některými dětmi a mladými lidmi hodně mluvíme, s některými téměř vůbec. Necháváme tělo, aby nás vedlo do fyzických změn. Někdy tvoříme, píšeme, kreslíme, posloucháme hudbu a příběhy. S menšími dětmi si hrajeme. Využíváme metodu terapeutické práce v pískovišti a v hliněném poli©.</p><p>S některými se vydáváme – jemně a v rytmu, který je zrovna možný – do vizualizací a snů.</p><p>Zpomalujeme a zastavujeme.</p><p>Někdy naopak plánujeme konkrétní kroky a tvoříme praktické struktury, ve kterých se dá volněji plynout.</p></article></div></div></section>
-<section class="offer prose-section parents-section" id="rodice"><div class="wrap"><div class="section-head"><div class="eyebrow">Rodiče</div><h2 class="serif">Podpora pro rodiče</h2></div><div class="services"><article class="service"><p>Rodiče dětí a dospívajících mohou být hlavní hybnou silou na cestě jejich dítěte zpět do jeho rovnováhy. A tak - pokud jsou sami otevřeni změně - jsou součástí psychoterapeutického procesu.</p><p>Někdy se spolu dokonce na prvním setkání dohodneme, že dítě do terapie nepůjde a že se budeme potkávat jen spolu.</p><p>Díváme se na příběh dítěte a rodiny a na to, kde propisuje do současnosti. Zkoumáme, kde ladí a neladí to, co od dítěte očekává rodič, škola, školka, společnost, a co potřebuje dítě samotné.</p><p>Aby se rodiče mohli opřít o sebe a provést dítě těžkými situacemi sami, dostávají tipy (např. jak s dítětem mluvit i s ohledem k jeho věku, čím ho doma podpořit, co změnit v jeho prostředí, jak pracovat se sebou v náročných situacích s dítětem) a informace, které jim pomáhají porozumět, co se vlastně děje.</p><p>Vycházíme i z toho, co rodiče v kontaktu s dítětem sami prožívají a jak o něm přemýšlí</p></article></div></div></section>
-    <section class="workshops" id="workshopy"><div class="wrap"><div class="section-head"><h2 class="serif">Workshopy</h2><p>Pro rodiče, pedagogy, lektory i dospívající. Rozklikněte si téma, které vás zajímá.</p></div><div class="workshop-grid"><article class="workshop"><details><summary>Kotva v bouři: první psychická pomoc, když jde do tuhého</summary><p>Pro dospělé i dospívající. Jak se stát oporou pro lidi kolem sebe po nehodě, úrazu nebo šoku.</p></details></article><article class="workshop"><details><summary>Psychoterapie zblízka</summary><p>Pro dospělé a dospívající. Praktický průvodce procesem terapie pro ty, kdo hledají pomoc pro sebe či své děti, i pro ty, které láká profese psychoterapeuta.</p></details></article><article class="workshop"><details><summary>Do světa dětí tvořivostí a hrou</summary><p>Pro rodiče a pedagogy. Tvořivé techniky inspirované přístupem Violet Oaklander, bez nutnosti terapeutického vzdělání.</p></details></article></div></div></section><section class="offer" id="cena"><div class="wrap"><div class="section-head"><div class="eyebrow">Cena a místo</div><h2 class="serif">Psychoterapeutická setkání</h2></div><div class="services"><article class="service"><p>Délka: 50 minut<br>Cena: 1 500 Kč (hotově nebo na účet)<br>Místo: Dobříš – Větrník</p><p>Není u mě bohužel místnost, ve které by rodiče mohli čekat na dítě během terapie. Ale jsme blízko přírody a dá se u nás hezky procházet. Centrum je od nás asi 5 minut autem, v blízkosti je restaurace Krmelec Vlaška.</p><p>Setkání s rodiči mohou výjimečně probíhat i online.</p></article><article class="service"><h3 class="serif">Workshopy a besedy</h3><p>Cena: 2 200–3 000 Kč za hodinu a skupinu, plus náklady na dopravu<br>Jazyk: čeština, angličtina, němčina<br>Místo: u vás, nebo u mě na Dobříši, pokud jste skupina do 6 lidí</p></article></div></div></section>
-<section class="intro wrap" id="uvod"><div class="intro-grid"><div class="intro-visual"><svg class="sun-art" viewBox="0 0 240 240" fill="none" aria-hidden="true"><circle cx="120" cy="112" r="57" stroke="#c9a868" stroke-width="1.5"/><path d="M120 70v84M120 70c-29 17-43 37-49 64h49m0-64c25 17 37 37 43 64h-43m0-64 15 64" stroke="#899e8c" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><circle cx="173" cy="65" r="7" fill="#e8ca8d"/></svg><div class="visual-caption">Zuzana Krásová</div></div><div class="intro-copy"><div class="eyebrow">O mně</div><h2 class="serif">Zuzana Krásová</h2><p>Žiju se svým mužem a našimi dětmi, synem a dcerou, na Dobříši, v domku s výhledem na brdské kopce. Tam se také nachází prostor, ve kterém se potkávám s dětmi, dospívajícími a jejich rodiči v rámci psychoterapeutických setkání.</p><p>Základy mého přístupu k terapii leží v Gestaltu. Tento směr jsem si vybrala „náhodou“ ve svých 28 letech. Sedí mi hlavně pro jeho důraz na plné projevení toho, co JE.</p><p>Psychologii jsem vystudovala na univerzitě v Regensburgu v Německu. Součástí mé cesty byla a stále je řada pracovních a studijních aktivit na univerzitách a ve firmách v Německu, ale také v Polsku, Austrálii, Rakousku, na Mallorce a v Itálii.</p><p>Je mi blízké vytvářet prostory, které propojují rodiny a podporují mladé lidi v jejich sebeuvědomění a naplňování jejich osobité cesty. V roce 2023 jsem proto založila a vedu druhostupňovou Komunitní školu DobroDruzi na Mníšku pod Brdy.</p><p>Vedu workshopy a besedy pro rodiče a učitele či lektory u nás nebo v zahraničí.</p><p>V rámci Gestalt institutu Praha jsem výcvikovou lektorkou. Společně s kolegyní Sylvou Tichotovou vedu a koncipuju postgraduální výcvik pro budoucí dětské terapeuty.</p></div></div></section>
-    <section class="contact" id="kontakt"><div class="wrap contact-inner"><div class="eyebrow">Kontakt</div><h2 class="serif">Napište nebo zavolejte</h2><div class="contact-row"><a class="btn" href="mailto:zuzakrasova@gmail.com">zuzakrasova@gmail.com</a><a class="btn btn-quiet" href="tel:+420602676482">602 676 482</a></div></div></section>
-  </main>
-  <footer><div class="wrap footer-inner"><span class="footer-brand">Zuzana Krásová</span><span>© Zuzana Krásová · Dobříš</span></div></footer>
-  <script>
-    const toggle=document.querySelector('.menu-toggle');const links=document.querySelector('.nav-links');toggle.addEventListener('click',()=>{const open=toggle.getAttribute('aria-expanded')==='true';toggle.setAttribute('aria-expanded',String(!open));toggle.setAttribute('aria-label',open?'Otevřít navigaci':'Zavřít navigaci');links.classList.toggle('open',!open)});links.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{links.classList.remove('open');toggle.setAttribute('aria-expanded','false');toggle.setAttribute('aria-label','Otevřít navigaci')}));document.getElementById('year').textContent=new Date().getFullYear();
-    const revealItems=document.querySelectorAll('.section-head,.intro-visual,.intro-copy>*,.service,.approach-copy>*,.approach-art,.workshop,.workshop-note,.contact-inner>*');revealItems.forEach((item,index)=>{item.classList.add('reveal');item.style.setProperty('--reveal-delay',`${index%3*90}ms`)});document.body.classList.add('motion-ready');
-    if('IntersectionObserver'in window){const observer=new IntersectionObserver(entries=>entries.forEach(entry=>{if(entry.isIntersecting){entry.target.classList.add('is-visible');observer.unobserve(entry.target)}}),{threshold:.13,rootMargin:'0px 0px -35px 0px'});revealItems.forEach(item=>observer.observe(item))}else revealItems.forEach(item=>item.classList.add('is-visible'));
-    const progress=document.querySelector('.scroll-progress span');let ticking=false;const updateScroll=()=>{const max=document.documentElement.scrollHeight-window.innerHeight;progress.style.setProperty('--progress',max>0?window.scrollY/max:0);document.body.classList.toggle('is-scrolled',window.scrollY>24);ticking=false};window.addEventListener('scroll',()=>{if(!ticking){requestAnimationFrame(updateScroll);ticking=true}},{passive:true});updateScroll();
-    const hero=document.querySelector('.hero');hero.addEventListener('pointermove',event=>{const rect=hero.getBoundingClientRect();const x=(event.clientX-rect.left)/rect.width-.5;const y=(event.clientY-rect.top)/rect.height-.5;hero.style.setProperty('--pointer-x',(x*16)+'px');hero.style.setProperty('--pointer-y',(y*12)+'px')});hero.addEventListener('pointerleave',()=>{hero.style.setProperty('--pointer-x','0px');hero.style.setProperty('--pointer-y','0px')});document.querySelectorAll('.pathways .service').forEach(card=>card.addEventListener('pointermove',event=>{const rect=card.getBoundingClientRect();card.style.setProperty('--spot-x',(event.clientX-rect.left)+'px');card.style.setProperty('--spot-y',(event.clientY-rect.top)+'px')}));document.querySelectorAll('[data-parallax]').forEach(item=>{const speed=Number(item.dataset.parallax);window.addEventListener('scroll',()=>{item.style.setProperty('--scroll-shift',Math.round(window.scrollY*speed*.025)+'px')},{passive:true})});
-  </script>
-</body>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#f4f6f1" />
+    <meta
+      name="description"
+      content="Psychopeutická setkání s dětmi, dospívajícími a mladými dospělými, podpora rodičů a workshopy Zuzany Krásové na Dobříši."
+    />
+    <title>Zuzana Krásová — Psychoterapie a workshopy</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Playfair+Display:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --ink: #313b39;
+        --muted: #66716c;
+        --paper: #fbfaf6;
+        --mist: #edf4f0;
+        --sage: #dbe8df;
+        --sage-deep: #567365;
+        --rose: #d66f89;
+        --rose-deep: #b85370;
+        --gold: #c99e54;
+        --line: #dce4de;
+        --serif: "Playfair Display", Georgia, serif;
+        --sans: "DM Sans", Arial, sans-serif;
+      }
+      * {
+        box-sizing: border-box;
+      }
+      html {
+        scroll-behavior: smooth;
+      }
+      body {
+        margin: 0;
+        background: var(--paper);
+        color: var(--ink);
+        font-family: var(--sans);
+        line-height: 1.7;
+      }
+      a {
+        color: inherit;
+      }
+      button,
+      a {
+        -webkit-tap-highlight-color: transparent;
+      }
+      .wrap {
+        width: min(1160px, calc(100% - 48px));
+        margin-inline: auto;
+      }
+      .eyebrow {
+        color: var(--rose-deep);
+        font-size: 1rem;
+        font-weight: 600;
+        letter-spacing: 0.15em;
+        text-transform: uppercase;
+      }
+      .serif {
+        font-family: var(--serif);
+        font-weight: 400;
+        letter-spacing: -0.025em;
+      }
+      h1,
+      h2,
+      h3,
+      p {
+        margin-top: 0;
+      }
+      h1 {
+        font-size: clamp(3rem, 6vw, 5.7rem);
+        line-height: 1.28;
+        margin-bottom: 22px;
+      }
+      h2 {
+        font-size: clamp(2.1rem, 4vw, 3.5rem);
+        line-height: 1.15;
+        margin-bottom: 18px;
+      }
+      h3 {
+        font-size: 1.5rem;
+        line-height: 1.3;
+      }
+      .btn {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        border-radius: 7px;
+        padding: 14px 22px;
+        background: var(--rose);
+        color: #fff;
+        text-decoration: none;
+        font-weight: 600;
+        box-shadow: 0 8px 20px #b8537022;
+        transition:
+          transform 0.2s,
+          background 0.2s;
+      }
+      .btn:hover {
+        background: var(--rose-deep);
+        transform: translateY(-2px);
+      }
+      .btn-quiet {
+        background: transparent;
+        color: var(--ink);
+        box-shadow: none;
+        border: 1px solid #b9c9be;
+      }
+      .btn-quiet:hover {
+        background: white;
+        color: var(--ink);
+      }
+      header {
+        position: absolute;
+        inset: 0 0 auto;
+        z-index: 5;
+      }
+      .nav {
+        height: 92px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+      .brand {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        text-decoration: none;
+      }
+      .brand-mark {
+        width: 43px;
+        height: 43px;
+        border: 1px solid #c9a868;
+        border-radius: 50%;
+        display: grid;
+        place-items: center;
+        color: var(--gold);
+        font-family: var(--serif);
+        font-size: 1.2rem;
+      }
+      .brand-name {
+        font-family: var(--serif);
+        font-size: 1.2rem;
+        line-height: 1.1;
+      }
+      .brand-name small {
+        display: block;
+        font: 500 0.62rem var(--sans);
+        letter-spacing: 0.11em;
+        color: var(--muted);
+        text-transform: uppercase;
+        margin-top: 4px;
+      }
+      .nav-links {
+        display: flex;
+        align-items: center;
+        gap: 32px;
+      }
+      .nav-links a {
+        text-decoration: none;
+        font-size: 0.9rem;
+        color: #3d4743;
+      }
+      .nav-links a:hover {
+        color: var(--rose-deep);
+        transform: translateY(-2px);
+      }
+      .nav-links .nav-cta {
+        padding: 10px 17px;
+        border-radius: 6px;
+        color: #fff;
+        background: var(--rose);
+      }
+      .menu-toggle {
+        display: none;
+      }
+      .hero {
+        position: relative;
+        isolation: isolate;
+        min-height: 790px;
+        display: grid;
+        place-items: center;
+        text-align: center;
+        overflow: hidden;
+        background: radial-gradient(ellipse at 50% 22%, #fff 0%, #f6f8f3 42%, #eaf2ed 100%);
+      }
+      .hero:before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        z-index: -1;
+        opacity: 0.27;
+        background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 180 180' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.75' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.14'/%3E%3C/svg%3E");
+      }
+      .hero:after {
+        content: "";
+        position: absolute;
+        z-index: -1;
+        width: 130%;
+        height: 120px;
+        left: -15%;
+        bottom: -84px;
+        background: var(--paper);
+        border-radius: 50% 50% 0 0/90% 90% 0 0;
+      }
+      .hero-inner {
+        width: min(880px, calc(100% - 40px));
+        padding-top: 80px;
+      }
+      .hero .eyebrow {
+        margin-bottom: 28px;
+      }
+      .hero h1 {
+        max-width: 900px;
+        margin-inline: auto;
+      }
+      .hero h1 em {
+        font-style: normal;
+        color: var(--sage-deep);
+      }
+      .hero-copy {
+        max-width: 690px;
+        margin: 0 auto 32px;
+        font-size: clamp(1rem, 1.45vw, 1.18rem);
+        color: #58625e;
+      }
+      .hero-actions {
+        display: flex;
+        gap: 13px;
+        justify-content: center;
+        flex-wrap: wrap;
+      }
+      .hero-art {
+        position: absolute;
+        right: 7%;
+        bottom: 68px;
+        width: min(240px, 20vw);
+        opacity: 0.72;
+        pointer-events: none;
+      }
+      .hero-art.left {
+        right: auto;
+        left: 7%;
+        bottom: 78px;
+        width: min(170px, 15vw);
+        opacity: 0.62;
+      }
+      .hero-note {
+        position: absolute;
+        bottom: 67px;
+        left: 50%;
+        transform: translateX(-50%);
+        font-family: var(--serif);
+        font-style: italic;
+        color: var(--rose-deep);
+        font-size: 1.18rem;
+        white-space: nowrap;
+      }
+      .intro {
+        padding: 120px 0 100px;
+      }
+      .intro-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 11%;
+        align-items: center;
+      }
+      .intro-visual {
+        min-height: 350px;
+        position: relative;
+        border-radius: 48% 52% 49% 51%;
+        background: linear-gradient(145deg, #f6e8e7, #edf3ec 60%, #dfeae2);
+        display: grid;
+        place-items: center;
+        overflow: hidden;
+      }
+      .intro-visual:before,
+      .intro-visual:after {
+        content: "";
+        position: absolute;
+        border: 1px solid #c6ac7444;
+        border-radius: 50%;
+      }
+      .intro-visual:before {
+        width: 78%;
+        height: 75%;
+        transform: rotate(-12deg);
+      }
+      .intro-visual:after {
+        width: 92%;
+        height: 89%;
+        transform: rotate(9deg);
+      }
+      .visual-caption {
+        position: absolute;
+        bottom: 36px;
+        left: 0;
+        right: 0;
+        text-align: center;
+        color: var(--rose-deep);
+        font: italic 1.7rem var(--serif);
+      }
+      .sun-art {
+        width: 58%;
+        max-width: 240px;
+      }
+      .intro-copy p {
+        color: var(--muted);
+      }
+      .intro-copy .lead {
+        font-size: 1.16rem;
+        color: var(--ink);
+      }
+      .tiny-link {
+        display: inline-flex;
+        align-items: center;
+        gap: 9px;
+        margin-top: 8px;
+        color: var(--rose-deep);
+        font-weight: 600;
+        text-decoration: none;
+      }
+      .offer {
+        padding: 94px 0 112px;
+        background: #f2f5f0;
+      }
+      .section-head {
+        text-align: center;
+        max-width: 690px;
+        margin: 0 auto 54px;
+      }
+      .section-head p {
+        color: var(--muted);
+      }
+      .services {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 24px;
+      }
+      .service {
+        background: #fffdf9;
+        padding: 34px 36px;
+        border: 1px solid #e5e9e3;
+        border-radius: 5px;
+        position: relative;
+      }
+      .service-icon {
+        width: 45px;
+        height: 45px;
+        border-radius: 50%;
+        background: #f6e9e8;
+        color: var(--rose-deep);
+        display: grid;
+        place-items: center;
+        font-size: 1.2rem;
+        margin-bottom: 19px;
+      }
+      .service p {
+        color: var(--muted);
+        margin-bottom: 0;
+      }
+      .service-meta {
+        margin-top: 20px;
+        padding-top: 17px;
+        border-top: 1px solid var(--line);
+        font-size: 0.91rem;
+        color: #53645a;
+      }
+      .service-meta strong {
+        color: var(--ink);
+      }
+      .approach {
+        padding: 115px 0;
+      }
+      .approach-grid {
+        display: grid;
+        grid-template-columns: 0.9fr 1.1fr;
+        gap: 10%;
+        align-items: center;
+      }
+      .approach-copy > p {
+        color: var(--muted);
+      }
+      .approach-list {
+        list-style: none;
+        padding: 0;
+        margin: 26px 0 0;
+        display: grid;
+        gap: 15px;
+      }
+      .approach-list li {
+        display: flex;
+        gap: 13px;
+        align-items: flex-start;
+      }
+      .approach-list span {
+        display: grid;
+        place-items: center;
+        width: 24px;
+        height: 24px;
+        flex: 0 0 auto;
+        background: #e7efe8;
+        border-radius: 50%;
+        color: var(--sage-deep);
+        font-size: 0.78rem;
+        margin-top: 2px;
+      }
+      .approach-art {
+        position: relative;
+        min-height: 410px;
+        border-radius: 48% 52% 8px 8px;
+        background: linear-gradient(180deg, #e9f2ee, #f6efe9);
+        overflow: hidden;
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+      }
+      .hill {
+        position: absolute;
+        left: -5%;
+        right: -5%;
+        height: 50%;
+        bottom: 0;
+        background: #cadccf;
+        border-radius: 48% 52% 0 0 / 26% 34% 0 0;
+        transform: rotate(-3deg);
+      }
+      .hill.two {
+        height: 34%;
+        background: #b8d0c1;
+        left: 20%;
+        right: -20%;
+        border-radius: 55% 40% 0 0/55% 30% 0 0;
+        transform: rotate(3deg);
+      }
+      .path {
+        position: absolute;
+        bottom: -48px;
+        left: 39%;
+        width: 140px;
+        height: 240px;
+        border-left: 2px dashed #fff9;
+        border-radius: 50%;
+        transform: rotate(25deg);
+      }
+      .little-sun {
+        position: absolute;
+        top: 54px;
+        right: 70px;
+        width: 65px;
+        height: 65px;
+        border-radius: 50%;
+        background: #e8c987;
+        box-shadow: 0 0 0 13px #e8c98733;
+      }
+      .art-phrase {
+        position: absolute;
+        top: 49px;
+        left: 45px;
+        color: #526c5d;
+        font: italic 1.55rem var(--serif);
+        max-width: 210px;
+      }
+      .workshops {
+        padding: 106px 0 120px;
+        background: #f9f5ef;
+      }
+      .workshop-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+      }
+      .workshop {
+        background: #fff;
+        border: 1px solid #ebe5dc;
+        padding: 30px 28px 28px;
+        display: flex;
+        flex-direction: column;
+        min-height: 475px;
+      }
+      .workshop:nth-child(2) {
+        transform: translateY(18px);
+      }
+      .workshop-number {
+        font: italic 2.5rem var(--serif);
+        color: #c6a86d;
+        margin-bottom: 14px;
+      }
+      .colorfortext {
+        color: #c6a86d;
+      }
+      .workshop h3 {
+        font-family: var(--serif);
+        font-weight: 500;
+        font-size: 1.55rem;
+      }
+      .workshop p {
+        font-size: 0.94rem;
+        color: var(--muted);
+      }
+      .workshop ul {
+        padding-left: 19px;
+        color: #55615b;
+        font-size: 0.9rem;
+        margin: 0 0 23px;
+      }
+      .workshop li {
+        margin: 0.35rem 0;
+      }
+      .workshop .tiny-link {
+        margin-top: 8px;
+      }
+      .workshop details summary {
+        cursor: pointer;
+        font: 500 1.3rem var(--serif);
+        list-style: none;
+      }
+      .workshop details summary::-webkit-details-marker {
+        display: none;
+      }
+      .workshop details summary:after {
+        content: "＋";
+        float: right;
+        color: var(--rose-deep);
+        font: 400 1.2rem var(--sans);
+      }
+      .workshop details[open] summary:after {
+        content: "−";
+      }
+      .workshop details p {
+        margin: 16px 0 0;
+        color: var(--muted);
+      }
+      .workshop-note {
+        text-align: center;
+        color: var(--muted);
+        font-size: 0.92rem;
+        margin: 55px auto 0;
+        max-width: 670px;
+      }
+      .contact {
+        padding: 105px 0 100px;
+        text-align: center;
+        background: radial-gradient(ellipse at center, #f4e8e7, #f7f3eb 66%);
+      }
+      .contact-inner {
+        max-width: 740px;
+        margin: auto;
+      }
+      .contact p {
+        color: var(--muted);
+        max-width: 600px;
+        margin: 0 auto 27px;
+      }
+      .contact-row {
+        display: flex;
+        justify-content: center;
+        gap: 14px;
+        flex-wrap: wrap;
+      }
+      .contact-details {
+        display: flex;
+        justify-content: center;
+        gap: 28px;
+        flex-wrap: wrap;
+        margin-top: 36px;
+        color: #59655f;
+        font-size: 0.95rem;
+      }
+      .contact-details a {
+        text-decoration: none;
+      }
+      .contact-details a:hover {
+        color: var(--rose-deep);
+      }
+      footer {
+        padding: 26px 0;
+        background: #eaf0ea;
+        color: #647069;
+        font-size: 0.82rem;
+      }
+      .footer-inner {
+        display: flex;
+        justify-content: space-between;
+        gap: 18px;
+        align-items: center;
+      }
+      .footer-brand {
+        font-family: var(--serif);
+        color: var(--ink);
+        font-size: 1.08rem;
+      }
+      @media (max-width: 800px) {
+        .nav {
+          height: 76px;
+        }
+        .nav-links {
+          gap: 18px;
+        }
+        .nav-links a {
+          font-size: 0.82rem;
+        }
+        .hero {
+          min-height: 740px;
+        }
+        .hero-art {
+          right: 3%;
+          width: 150px;
+        }
+        .hero-art.left {
+          left: 3%;
+          width: 120px;
+        }
+        .intro-grid,
+        .approach-grid {
+          gap: 8%;
+        }
+        .intro-visual {
+          min-height: 300px;
+        }
+        .workshop-grid {
+          gap: 13px;
+        }
+        .workshop {
+          padding: 25px 21px;
+        }
+        .workshop:nth-child(2) {
+          transform: none;
+        }
+      }
+      @media (max-width: 620px) {
+        .wrap {
+          width: min(100% - 36px, 500px);
+        }
+        .nav {
+          height: 70px;
+        }
+        .brand-mark {
+          width: 37px;
+          height: 37px;
+        }
+        .brand-name {
+          font-size: 1rem;
+        }
+        .nav-links {
+          display: none;
+          position: absolute;
+          top: 62px;
+          left: 18px;
+          right: 18px;
+          padding: 18px;
+          background: #fffdf9;
+          box-shadow: 0 12px 30px #24352c18;
+          border: 1px solid var(--line);
+          border-radius: 7px;
+          flex-direction: column;
+          align-items: stretch;
+          gap: 4px;
+        }
+        .nav-links.open {
+          display: flex;
+        }
+        .nav-links a {
+          padding: 9px 10px;
+          font-size: 0.95rem;
+        }
+        .nav-links .nav-cta {
+          text-align: center;
+          margin-top: 6px;
+        }
+        .menu-toggle {
+          display: flex;
+          border: 1px solid var(--line);
+          background: #fffdf9;
+          border-radius: 5px;
+          width: 42px;
+          height: 42px;
+          align-items: center;
+          justify-content: center;
+          color: var(--ink);
+          font-size: 1.3rem;
+        }
+        .hero {
+          min-height: 730px;
+        }
+        .hero-inner {
+          padding-top: 60px;
+        }
+        .hero .eyebrow {
+          font-size: 0.68rem;
+          margin-bottom: 20px;
+        }
+        .hero h1 {
+          font-size: clamp(2.75rem, 12vw, 4.2rem);
+        }
+        .hero-copy {
+          font-size: 1rem;
+        }
+        .hero-art {
+          width: 112px;
+          bottom: 54px;
+          right: 0;
+        }
+        .hero-art.left {
+          width: 90px;
+          bottom: 57px;
+          left: 0;
+        }
+        .hero-note {
+          bottom: 41px;
+          font-size: 1.02rem;
+        }
+        .intro {
+          padding: 83px 0;
+        }
+        .intro-grid,
+        .approach-grid {
+          grid-template-columns: 1fr;
+          gap: 38px;
+        }
+        .intro-visual {
+          min-height: 270px;
+          width: min(100%, 350px);
+          margin: auto;
+        }
+        .intro-copy {
+          text-align: left;
+        }
+        .offer,
+        .workshops {
+          padding: 78px 0;
+        }
+        .section-head {
+          margin-bottom: 35px;
+        }
+        .services,
+        .workshop-grid {
+          grid-template-columns: 1fr;
+        }
+        .service {
+          padding: 28px;
+        }
+        .approach {
+          padding: 82px 0;
+        }
+        .approach-art {
+          min-height: 330px;
+          order: 2;
+        }
+        .workshop {
+          min-height: 0;
+          padding: 27px;
+        }
+        .workshop-number {
+          font-size: 2rem;
+        }
+        .workshop-note {
+          margin-top: 30px;
+        }
+        .contact {
+          padding: 80px 0;
+        }
+        .contact-details {
+          gap: 12px 22px;
+        }
+        .footer-inner {
+          flex-direction: column;
+          text-align: center;
+        }
+        .footer-inner span:last-child {
+          max-width: 280px;
+        }
+      }
+      /* Jemný pohyb a hloubka, které nechávají obsah v hlavní roli. */
+      header {
+        position: fixed;
+        transition:
+          background 0.35s,
+          box-shadow 0.35s,
+          backdrop-filter 0.35s;
+      }
+      body.is-scrolled header {
+        background: #fbfaf6df;
+        backdrop-filter: blur(14px);
+        box-shadow: 0 1px 18px #263a2c0d;
+      }
+      .scroll-progress {
+        position: fixed;
+        z-index: 20;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 3px;
+        pointer-events: none;
+      }
+      .scroll-progress span {
+        display: block;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(90deg, #d66f89, #e8c987, #89a998);
+        transform: scaleX(var(--progress, 0));
+        transform-origin: left;
+        will-change: transform;
+      }
+      .hero-inner {
+        animation: hero-enter 1s cubic-bezier(0.2, 0.7, 0.2, 1) both;
+      }
+      .hero-art {
+        animation: float-gently 7s ease-in-out infinite;
+        transform-origin: center;
+      }
+      .hero-art.left {
+        animation-delay: -3.2s;
+      }
+      .hero h1 em {
+        position: relative;
+        display: inline-block;
+      }
+      .hero h1 em:after {
+        content: "";
+        position: absolute;
+        height: 2px;
+        left: 5%;
+        right: 5%;
+        bottom: -8px;
+        background: linear-gradient(90deg, transparent, #d6ad69, transparent);
+        transform: scaleX(0);
+        transform-origin: center;
+        animation: underline-in 0.9s 0.55s ease-out forwards;
+      }
+      .btn {
+        position: relative;
+        overflow: hidden;
+        isolation: isolate;
+        transition:
+          transform 0.28s cubic-bezier(0.2, 0.8, 0.2, 1),
+          background 0.25s,
+          box-shadow 0.25s;
+      }
+      .btn:before {
+        content: "";
+        position: absolute;
+        z-index: -1;
+        inset: -50% auto -50% -45%;
+        width: 35%;
+        transform: skewX(-20deg);
+        background: linear-gradient(90deg, transparent, #ffffff55, transparent);
+        transition: left 0.55s ease;
+      }
+      .btn:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 12px 28px #b8537033;
+      }
+      .btn:hover:before {
+        left: 125%;
+      }
+      .tiny-link span {
+        display: inline-block;
+        transition: transform 0.2s ease;
+      }
+      .tiny-link:hover span {
+        transform: translateX(5px);
+      }
+      .service,
+      .workshop {
+        transition:
+          transform 0.32s cubic-bezier(0.2, 0.8, 0.2, 1),
+          box-shadow 0.32s,
+          border-color 0.32s;
+      }
+      .service:hover,
+      .workshop:hover {
+        transform: translateY(-7px);
+        border-color: #d6c4a1;
+        box-shadow: 0 18px 42px #33483a12;
+      }
+      .service-icon {
+        transition:
+          transform 0.35s,
+          background 0.35s;
+      }
+      .service:hover .service-icon {
+        transform: rotate(-8deg) scale(1.08);
+        background: #f7e4e7;
+      }
+      .intro-visual {
+        transition:
+          transform 0.6s cubic-bezier(0.2, 0.8, 0.2, 1),
+          box-shadow 0.6s;
+      }
+      .intro-visual:hover {
+        transform: translateY(-5px) rotate(-1deg);
+        box-shadow: 0 24px 55px #697e6c16;
+      }
+      .sun-art {
+        animation: sun-drift 8s ease-in-out infinite;
+      }
+      .little-sun {
+        animation: sun-glow 4.5s ease-in-out infinite;
+      }
+      .path {
+        animation: path-draw 2.6s 0.4s ease-out both;
+      }
+      .hero-note {
+        animation: note-in 0.7s 1s ease-out both;
+      }
+      .motion-ready .reveal {
+        opacity: 0;
+        transform: translateY(24px);
+        transition:
+          opacity 0.75s ease,
+          transform 0.75s cubic-bezier(0.2, 0.7, 0.2, 1);
+        transition-delay: var(--reveal-delay, 0ms);
+      }
+      .motion-ready .reveal.is-visible {
+        opacity: 1;
+        transform: translateY(0);
+      }
+      .approach-art.reveal {
+        transform: translateY(24px) scale(0.985);
+      }
+      .approach-art.reveal.is-visible {
+        transform: translateY(0) scale(1);
+      }
+      @keyframes hero-enter {
+        from {
+          opacity: 0;
+          transform: translateY(18px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+      @keyframes float-gently {
+        0%,
+        100% {
+          translate: 0 0;
+          rotate: 0deg;
+        }
+        50% {
+          translate: 0 -10px;
+          rotate: 1deg;
+        }
+      }
+      @keyframes underline-in {
+        to {
+          transform: scaleX(1);
+        }
+      }
+      @keyframes sun-drift {
+        0%,
+        100% {
+          transform: translateY(0) rotate(-1deg);
+        }
+        50% {
+          transform: translateY(-7px) rotate(1deg);
+        }
+      }
+      @keyframes sun-glow {
+        0%,
+        100% {
+          box-shadow:
+            0 0 0 13px #e8c98733,
+            0 0 26px #e8c98722;
+        }
+        50% {
+          box-shadow:
+            0 0 0 20px #e8c98722,
+            0 0 44px #e8c98733;
+        }
+      }
+      @keyframes path-draw {
+        from {
+          clip-path: inset(100% 0 0 0);
+        }
+        to {
+          clip-path: inset(0);
+        }
+      }
+      @keyframes note-in {
+        from {
+          opacity: 0;
+          transform: translate(-50%, 8px);
+        }
+        to {
+          opacity: 1;
+          transform: translate(-50%, 0);
+        }
+      }
+      @media (max-width: 620px) {
+        .hero h1 em:after {
+          bottom: -5px;
+        }
+        .hero-art {
+          animation-duration: 8.5s;
+        }
+        .service:hover,
+        .workshop:hover {
+          transform: translateY(-3px);
+        }
+      }
+      @media (max-width: 800px) {
+        .nav-links {
+          display: none;
+          position: absolute;
+          top: 68px;
+          left: 24px;
+          right: 24px;
+          padding: 16px;
+          background: #fffdf9;
+          box-shadow: 0 12px 30px #24352c18;
+          border: 1px solid var(--line);
+          border-radius: 7px;
+          flex-direction: column;
+          align-items: stretch;
+          gap: 3px;
+        }
+        .nav-links.open {
+          display: flex;
+        }
+        .nav-links a {
+          padding: 8px 10px;
+          font-size: 0.92rem;
+        }
+        .nav-links .nav-cta {
+          text-align: center;
+          margin-top: 4px;
+        }
+        .menu-toggle {
+          display: flex;
+        }
+      }
+      @media (prefers-reduced-motion: reduce) {
+        html {
+          scroll-behavior: auto;
+        }
+        *,
+        *:before,
+        *:after {
+          animation-duration: 0.01ms !important;
+          animation-iteration-count: 1 !important;
+          scroll-behavior: auto !important;
+          transition-duration: 0.01ms !important;
+        }
+        .motion-ready .reveal {
+          opacity: 1;
+          transform: none;
+        }
+      }
+      /* Layout refinements for the supplied copy */
+      .pathways {
+        background: linear-gradient(180deg, #f2f5f0, #f8f7f1);
+      }
+      .pathways .services {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        align-items: stretch;
+      }
+      .pathways .service {
+        display: flex;
+        flex-direction: column;
+        min-height: 250px;
+        padding: 32px 30px;
+      }
+      .pathways .service .tiny-link {
+        margin-top: auto;
+        padding-top: 20px;
+      }
+      .prose-section .section-head {
+        text-align: left;
+        max-width: 880px;
+        margin: 0 auto 26px;
+      }
+      .prose-section .section-head h2 {
+        max-width: 750px;
+      }
+      .prose-section .section-head p {
+        max-width: 850px;
+        font-size: 1rem;
+        line-height: 1.8;
+        color: var(--ink);
+      }
+      .prose-section .services {
+        grid-template-columns: 1fr;
+        max-width: 880px;
+        margin: 0 auto;
+      }
+      .prose-section .service {
+        background: transparent;
+        border: 0;
+        border-top: 1px solid var(--line);
+        border-radius: 0;
+        padding: 25px 0 0;
+        box-shadow: none;
+      }
+      .parents-section {
+        background: #fbfaf6;
+      }
+      .workshop-grid {
+        max-width: 920px;
+        margin-inline: auto;
+      }
+      .workshop details {
+        border-left: 2px solid #e6d9bf;
+        padding: 4px 0 4px 20px;
+      }
+      .workshop details[open] {
+        border-left-color: var(--rose);
+      }
+      .workshop details summary {
+        font-size: 1.4rem;
+        line-height: 1.45;
+        padding: 5px 38px 5px 0;
+        position: relative;
+      }
+      .workshop details summary:after {
+        position: absolute;
+        right: 0;
+        top: 4px;
+        width: 28px;
+        height: 28px;
+        display: grid;
+        place-items: center;
+        border: 1px solid var(--line);
+        border-radius: 50%;
+        font-size: 1rem;
+      }
+      .workshop details p {
+        max-width: 760px;
+        font-size: 0.98rem;
+        line-height: 1.75;
+        margin: 14px 0 8px;
+      }
+      .hero-note {
+        white-space: normal;
+        line-height: 1.3;
+        text-align: center;
+        font-size: clamp(1.08rem, 1.8vw, 1.4rem);
+      }
+      .section-head {
+        margin-bottom: 42px;
+      }
+      .section-head h2 {
+        margin-bottom: 12px;
+      }
+      @media (max-width: 800px) {
+        .pathways .services {
+          grid-template-columns: 1fr 1fr;
+        }
+        .pathways .service {
+          min-height: 220px;
+          padding: 27px 24px;
+        }
+        .workshop-grid {
+          max-width: 100%;
+        }
+      }
+      @media (max-width: 560px) {
+        .pathways .services {
+          grid-template-columns: 1fr;
+        }
+        .pathways .service {
+          min-height: 0;
+        }
+        .prose-section .section-head {
+          margin-bottom: 18px;
+        }
+        .prose-section .service {
+          padding-top: 18px;
+        }
+        .workshop {
+          padding: 20px 18px;
+        }
+        .workshop details {
+          padding-left: 14px;
+        }
+        .workshop details summary {
+          font-size: 1.2rem;
+        }
+      }
+      body.is-scrolled header {
+        background: #fbfaf6;
+        box-shadow: 0 5px 20px #263a2c16;
+        backdrop-filter: blur(16px);
+      }
+      section[id] {
+        scroll-margin-top: 100px;
+      }
+      .prose-section .section-head p,
+      .prose-section .service p {
+        color: #4f5b55;
+      }
+      @media (max-width: 800px) {
+        section[id] {
+          scroll-margin-top: 84px;
+        }
+      } /* Bigger, layered motion */
+      .hero {
+        overflow: hidden;
+        --pointer-x: 0px;
+        --pointer-y: 0px;
+      }
+      .hero-aurora {
+        position: absolute;
+        inset: 0;
+        z-index: 0;
+        overflow: hidden;
+        pointer-events: none;
+      }
+      .hero-inner {
+        position: relative;
+        z-index: 2;
+      }
+      .hero-aurora i {
+        position: absolute;
+        display: block;
+        width: min(42vw, 560px);
+        aspect-ratio: 1;
+        border-radius: 50%;
+        filter: blur(55px);
+        opacity: 0.28;
+        mix-blend-mode: multiply;
+        animation: aurora-drift 16s ease-in-out infinite alternate;
+      }
+      .hero-aurora i:nth-child(1) {
+        top: -25%;
+        left: -12%;
+        background: radial-gradient(circle, #e9c9cf 0, transparent 68%);
+      }
+      .hero-aurora i:nth-child(2) {
+        right: -10%;
+        top: 2%;
+        width: min(38vw, 490px);
+        background: radial-gradient(circle, #bfd7c7 0, transparent 70%);
+        animation-delay: -7s;
+      }
+      .hero-aurora i:nth-child(3) {
+        left: 35%;
+        bottom: -62%;
+        width: min(48vw, 620px);
+        background: radial-gradient(circle, #eddfbd 0, transparent 70%);
+        animation-delay: -11s;
+      }
+      .orbit-dot {
+        position: absolute;
+        display: block;
+        width: 9px;
+        height: 9px;
+        border-radius: 50%;
+        background: #d77f94;
+        box-shadow: 0 0 0 7px #d77f941c;
+        animation: twinkle 3.5s ease-in-out infinite;
+      }
+      .orbit-dot.one {
+        top: 27%;
+        left: 18%;
+      }
+      .orbit-dot.two {
+        top: 32%;
+        right: 19%;
+        width: 6px;
+        height: 6px;
+        animation-delay: -1.2s;
+      }
+      .orbit-dot.three {
+        bottom: 26%;
+        left: 27%;
+        width: 5px;
+        height: 5px;
+        animation-delay: -2.1s;
+      }
+      .hero:after {
+        animation: wave-breathe 12s ease-in-out infinite alternate;
+      }
+      .hero h1 em {
+        color: transparent;
+        background: linear-gradient(105deg, #567365 8%, #8ba28f 36%, #c37185 58%, #567365 83%);
+        background-size: 240% 100%;
+        background-clip: text;
+        -webkit-background-clip: text;
+        animation: color-trail 8s ease-in-out infinite;
+      }
+      .hero-art {
+        transform: translate(var(--pointer-x, 0px), var(--pointer-y, 0px))
+          translateY(var(--scroll-shift, 0px));
+        filter: drop-shadow(0 10px 20px #42594918);
+        transition: filter 0.35s;
+      }
+      .hero-art:hover {
+        filter: drop-shadow(0 15px 24px #42594930);
+      }
+      .intro-visual:before {
+        animation: orbit-slow 26s linear infinite;
+      }
+      .intro-visual:after {
+        animation: orbit-slow 34s linear infinite reverse;
+      }
+      .intro-visual:hover .sun-art {
+        animation-duration: 3s;
+      }
+      .pathways .service {
+        position: relative;
+        overflow: hidden;
+        isolation: isolate;
+        transition:
+          transform 0.5s cubic-bezier(0.2, 0.8, 0.2, 1),
+          box-shadow 0.5s,
+          border-color 0.4s;
+      }
+      .pathways .service:before {
+        content: "";
+        position: absolute;
+        z-index: -1;
+        inset: -40%;
+        background: radial-gradient(
+          circle at var(--spot-x, 50%) var(--spot-y, 50%),
+          #e6efe8 0,
+          transparent 46%
+        );
+        opacity: 0;
+        transition: opacity 0.45s;
+      }
+      .pathways .service:hover {
+        transform: translateY(-10px) rotate(-0.4deg);
+        box-shadow: 0 25px 55px #33483a1b;
+      }
+      .pathways .service:hover:before {
+        opacity: 1;
+      }
+      .pathways .service-icon {
+        animation: icon-bob 4s ease-in-out infinite;
+      }
+      .pathways .service:nth-child(2) .service-icon {
+        animation-delay: -1.2s;
+      }
+      .pathways .service:nth-child(3) .service-icon {
+        animation-delay: -2.3s;
+      }
+      .prose-section .section-head h2 {
+        position: relative;
+      }
+      .prose-section .section-head h2:after {
+        content: "";
+        display: block;
+        width: 54px;
+        height: 2px;
+        margin-top: 18px;
+        background: linear-gradient(90deg, var(--rose), #e9c987);
+        transform-origin: left;
+        transform: scaleX(0.35);
+        transition: transform 0.7s cubic-bezier(0.2, 0.8, 0.2, 1);
+      }
+      .prose-section .section-head.is-visible h2:after {
+        transform: scaleX(1);
+      }
+      .approach-art {
+        transform: translate3d(var(--pointer-x, 0px), var(--scroll-shift, 0px), 0);
+        transition: transform 0.8s cubic-bezier(0.2, 0.7, 0.2, 1);
+      }
+      .approach-art .hill {
+        animation: hill-drift 10s ease-in-out infinite alternate;
+      }
+      .approach-art .hill.two {
+        animation-duration: 13s;
+        animation-direction: alternate-reverse;
+      }
+      .approach-art .art-phrase {
+        animation: phrase-float 6s ease-in-out infinite;
+      }
+      .workshop {
+        transition:
+          transform 0.42s cubic-bezier(0.2, 0.8, 0.2, 1),
+          box-shadow 0.42s,
+          border-color 0.4s;
+      }
+      .workshop:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 18px 40px #33483a12;
+      }
+      .workshop details summary {
+        transition:
+          color 0.25s,
+          padding-left 0.35s;
+      }
+      .workshop details summary:hover,
+      .workshop details[open] summary {
+        color: var(--rose-deep);
+        padding-left: 6px;
+      }
+      .workshop details summary:after {
+        transition:
+          transform 0.35s,
+          background 0.35s,
+          color 0.35s;
+      }
+      .workshop details[open] summary:after {
+        transform: rotate(180deg);
+        background: var(--rose);
+        color: white;
+        border-color: var(--rose);
+      }
+      .workshop details p {
+        animation: detail-in 0.45s ease both;
+      }
+      .contact .btn {
+        animation: contact-breathe 4s ease-in-out infinite;
+      }
+      .contact .btn-quiet {
+        animation-delay: -2s;
+      }
+      .motion-ready .reveal {
+        transform: translateY(38px) scale(0.975);
+        filter: blur(5px);
+        transition:
+          opacity 0.9s ease,
+          transform 0.95s cubic-bezier(0.18, 0.75, 0.24, 1),
+          filter 0.9s ease;
+      }
+      .motion-ready .reveal.is-visible {
+        transform: translateY(0) scale(1);
+        filter: blur(0);
+      }
+      .approach-art.reveal {
+        transform: translate3d(0, 32px, 0) scale(0.96);
+      }
+      .approach-art.reveal.is-visible {
+        transform: translate3d(var(--pointer-x, 0px), var(--scroll-shift, 0px), 0) scale(1);
+      }
+      @keyframes aurora-drift {
+        0% {
+          transform: translate3d(-3%, 0, 0) scale(0.92);
+        }
+        100% {
+          transform: translate3d(7%, 8%, 0) scale(1.12);
+        }
+      }
+      @keyframes twinkle {
+        0%,
+        100% {
+          opacity: 0.25;
+          transform: scale(0.65);
+        }
+        50% {
+          opacity: 0.95;
+          transform: scale(1.25);
+        }
+      }
+      @keyframes wave-breathe {
+        from {
+          border-radius: 50% 50% 0 0/90% 90% 0 0;
+          transform: translateY(0);
+        }
+        to {
+          border-radius: 47% 53% 0 0/86% 94% 0 0;
+          transform: translateY(-8px);
+        }
+      }
+      @keyframes color-trail {
+        0%,
+        100% {
+          background-position: 0% 50%;
+        }
+        50% {
+          background-position: 100% 50%;
+        }
+      }
+      @keyframes orbit-slow {
+        to {
+          rotate: 360deg;
+        }
+      }
+      @keyframes icon-bob {
+        0%,
+        100% {
+          translate: 0 0;
+        }
+        50% {
+          translate: 0 -5px;
+        }
+      }
+      @keyframes hill-drift {
+        from {
+          translate: -5px 0;
+        }
+        to {
+          translate: 8px -3px;
+        }
+      }
+      @keyframes phrase-float {
+        0%,
+        100% {
+          translate: 0 0;
+        }
+        50% {
+          translate: 0 -5px;
+        }
+      }
+      @keyframes detail-in {
+        from {
+          opacity: 0;
+          transform: translateY(8px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+      @keyframes contact-breathe {
+        0%,
+        100% {
+          box-shadow: 0 8px 20px #b8537022;
+        }
+        50% {
+          box-shadow: 0 12px 30px #b8537040;
+        }
+      }
+      @media (prefers-reduced-motion: reduce) {
+        .hero-aurora i,
+        .orbit-dot,
+        .hero:after,
+        .hero h1 em,
+        .intro-visual:before,
+        .intro-visual:after,
+        .pathways .service-icon,
+        .approach-art .hill,
+        .approach-art .art-phrase,
+        .contact .btn {
+          animation: none !important;
+        }
+        .motion-ready .reveal {
+          filter: none;
+          transform: none;
+          opacity: 1;
+        }
+      }
+      .workshop-link {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        min-height: 330px;
+        color: inherit;
+        text-decoration: none;
+        overflow: hidden;
+      }
+      .workshop-link h3 {
+        margin: 4px 0 14px;
+        max-width: 19ch;
+        font-size: clamp(1.35rem, 2.3vw, 1.7rem);
+        line-height: 1.32;
+      }
+      .workshop-link p {
+        margin-bottom: 36px;
+      }
+      .workshop-link .workshop-number {
+        display: block;
+        margin-bottom: 17px;
+        font: italic 2rem var(--serif);
+        color: #c6a86d;
+      }
+      .workshop-arrow {
+        position: absolute;
+        right: 27px;
+        bottom: 24px;
+        display: grid;
+        place-items: center;
+        width: 38px;
+        height: 38px;
+        border: 1px solid var(--line);
+        border-radius: 50%;
+        color: var(--rose-deep);
+        font-size: 1.2rem;
+        transition:
+          transform 0.25s ease,
+          background 0.25s ease;
+      }
+      .workshop-link:hover .workshop-arrow {
+        transform: translate(3px, -3px);
+        background: #f7e8e9;
+      }
+      .workshop-detail-page {
+        min-height: 70vh;
+        padding: 132px 0 100px;
+        background: radial-gradient(ellipse at 50% 0%, #fff 0%, #f9f5ef 66%, #edf4f0 100%);
+      }
+      .workshop-detail-wrap {
+        max-width: 920px;
+      }
+      .workshop-back {
+        margin: 0 0 27px;
+      }
+      .workshop-detail-card {
+        padding: clamp(28px, 6vw, 64px);
+        background: #fffdf9;
+        border: 1px solid #e5e9e3;
+        border-radius: 12px;
+        box-shadow: 0 22px 65px #33483a12;
+      }
+      .workshop-detail-card details > summary {
+        position: relative;
+        padding: 0 54px 24px 0;
+        border-bottom: 1px solid var(--line);
+        color: var(--ink);
+        font: 500 clamp(2rem, 5vw, 3.3rem) / 1.15 var(--serif);
+        letter-spacing: -0.025em;
+        cursor: pointer;
+        list-style: none;
+      }
+      .workshop-detail-card details > summary::-webkit-details-marker {
+        display: none;
+      }
+      .workshop-detail-card details > summary::after {
+        content: "−";
+        position: absolute;
+        top: 3px;
+        right: 0;
+        display: grid;
+        place-items: center;
+        width: 38px;
+        height: 38px;
+        border: 1px solid var(--line);
+        border-radius: 50%;
+        color: var(--rose-deep);
+        font: 400 1.35rem var(--sans);
+      }
+      .workshop-detail-card details:not([open]) > summary::after {
+        content: "+";
+      }
+      .workshop-detail-content {
+        padding-top: 30px;
+        color: #4f5b55;
+        font-size: 1.03rem;
+        line-height: 1.85;
+      }
+      .workshop-detail-content > p:first-child {
+        color: var(--sage-deep);
+        font: italic 1.3rem/1.6 var(--serif);
+      }
+      .workshop-detail-content h3 {
+        margin: 34px 0 12px;
+        color: var(--ink);
+        font: 500 1.55rem/1.35 var(--serif);
+      }
+      .workshop-detail-content p {
+        margin: 0 0 18px;
+      }
+      .workshop-bullets {
+        display: grid;
+        gap: 11px;
+        margin: 10px 0 24px;
+        padding-left: 25px;
+      }
+      .workshop-bullets li {
+        padding-left: 4px;
+      }
+      .workshop-tools {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 10px 24px;
+        padding: 0;
+        list-style: none;
+      }
+      .workshop-tools li {
+        padding: 13px 16px;
+        border: 1px solid var(--line);
+        border-radius: 7px;
+        background: #f7f8f3;
+      }
+      @media (max-width: 800px) {
+        .workshop-grid {
+          grid-template-columns: 1fr 1fr;
+        }
+        .workshop-link {
+          min-height: 310px;
+        }
+      }
+      @media (max-width: 620px) {
+        .workshop-grid {
+          grid-template-columns: 1fr;
+        }
+        .workshop-link {
+          min-height: 0;
+        }
+        .workshop-detail-page {
+          padding: 108px 0 72px;
+        }
+        .workshop-detail-card {
+          padding: 26px 22px;
+        }
+        .workshop-detail-card details > summary {
+          padding-right: 42px;
+        }
+        .workshop-tools {
+          grid-template-columns: 1fr;
+        }
+      }
+      .workshop-inline {
+        padding: 0;
+      }
+      .workshop-inline details {
+        width: 100%;
+      }
+      .workshop-inline details > summary {
+        position: relative;
+        display: block;
+        min-height: 245px;
+        padding: 30px 30px 76px;
+        cursor: pointer;
+        list-style: none;
+      }
+      .workshop-inline details > summary::-webkit-details-marker {
+        display: none;
+      }
+      .workshop-inline details > summary::after {
+        content: "＋";
+        position: absolute;
+        top: 26px;
+        right: 26px;
+        display: grid;
+        place-items: center;
+        width: 36px;
+        height: 36px;
+        border: 1px solid var(--line);
+        border-radius: 50%;
+        color: var(--rose-deep);
+        font: 400 1.15rem var(--sans);
+        transition:
+          transform 0.25s ease,
+          background 0.25s ease;
+      }
+      .workshop-inline details[open] > summary::after {
+        content: "−";
+        transform: rotate(180deg);
+        background: var(--rose);
+        color: #fff;
+        border-color: var(--rose);
+      }
+      .workshop-summary-title {
+        display: block;
+        max-width: 19ch;
+        margin: 4px 0 13px;
+        font: 500 clamp(1.35rem, 2.3vw, 1.7rem) / 1.32 var(--serif);
+      }
+      .workshop-card-teaser {
+        display: block;
+        padding-right: 5px;
+        color: var(--muted);
+        font-size: 0.94rem;
+        line-height: 1.65;
+      }
+      .workshop-inline-content {
+        padding: 30px 34px 36px;
+        border-top: 1px solid var(--line);
+        color: #4f5b55;
+      }
+      .workshop-doc-title {
+        margin: 0 0 12px;
+        color: var(--ink);
+        font: 500 1.7rem/1.3 var(--serif);
+      }
+      .workshop-inline.is-open {
+        grid-column: 1 / -1;
+      }
+      .workshop-inline.is-open details {
+        display: grid;
+        grid-template-columns: minmax(240px, 0.62fr) minmax(0, 1.38fr);
+      }
+      .workshop-inline.is-open details > summary {
+        min-height: 0;
+        align-self: start;
+        padding: 30px 28px;
+      }
+      .workshop-inline.is-open details > summary::after {
+        top: 27px;
+        right: 22px;
+      }
+      .workshop-inline.is-open .workshop-inline-content {
+        border-top: 0;
+        border-left: 1px solid var(--line);
+        padding: 30px 36px 36px;
+      }
+      .workshop-inline .workshop-detail-content {
+        padding-top: 0;
+      }
+      @media (max-width: 800px) {
+        .workshop-inline details > summary {
+          min-height: 0;
+        }
+        .workshop-inline.is-open details {
+          grid-template-columns: 1fr;
+        }
+        .workshop-inline.is-open .workshop-inline-content {
+          border-left: 0;
+          border-top: 1px solid var(--line);
+          padding: 25px 28px 30px;
+        }
+      }
+      @media (max-width: 620px) {
+        .workshop-inline details > summary {
+          padding: 25px 24px 62px;
+        }
+        .workshop-inline details > summary::after {
+          top: 20px;
+          right: 19px;
+        }
+        .workshop-inline.is-open details > summary {
+          padding: 24px;
+        }
+        .workshop-inline.is-open details > summary::after {
+          top: 20px;
+          right: 19px;
+        }
+        .workshop-inline-content {
+          padding: 24px;
+        }
+        .workshop-doc-title {
+          font-size: 1.45rem;
+        }
+      }
+      .text-accent {
+        display: inline-block;
+        color: var(--rose-deep);
+        font-size: 1.1em;
+        line-height: 1;
+        margin-right: 0.35em;
+      }
+      .has-accent-marker {
+        margin-top: 1.4em;
+      }
+      .contact-whatsapp {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+        margin: 22px auto 30px;
+      }
+      .contact-whatsapp p {
+        margin: 0;
+        color: var(--ink);
+        font-family: var(--serif);
+        font-size: 1.35rem;
+      }
+      .btn.btn-whatsapp {
+        background: #25d366;
+        box-shadow: 0 8px 20px #25d36633;
+      }
+      .btn.btn-whatsapp:hover {
+        background: #1eaa52;
+        box-shadow: 0 12px 28px #25d36644;
+      }
+      .footer-credit {
+        color: inherit;
+        text-decoration: none;
+      }
+      .footer-credit:hover {
+        color: var(--rose-deep);
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="scroll-progress" aria-hidden="true"><span></span></div>
+    <header>
+      <nav class="nav wrap" aria-label="Hlavní navigace">
+        <a class="brand" href="#domu" aria-label="Zuzana Krásová, úvodní stránka"
+          ><span class="brand-mark" aria-hidden="true">zk</span
+          ><span class="brand-name">Zuzana Krásová<small>psychoterapie · workshopy</small></span></a
+        >
+        <button
+          class="menu-toggle"
+          aria-label="Otevřít navigaci"
+          aria-expanded="false"
+          aria-controls="nav-links"
+        >
+          ☰
+        </button>
+        <div class="nav-links" id="nav-links">
+          <a href="#teens">Teens a mladí dospělí</a><a href="#deti">Děti</a
+          ><a href="#rodice">Rodiče</a><a href="#workshopy">Workshopy</a
+          ><a href="#cena">Cena a místo</a><a href="#o-mne">O mně</a
+          ><a class="nav-cta" href="#kontakt">Kontakt</a>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="hero" id="domu">
+        <div class="hero-aurora" aria-hidden="true">
+          <i></i><i></i><i></i><span class="orbit-dot one"></span><span class="orbit-dot two"></span
+          ><span class="orbit-dot three"></span>
+        </div>
+        <svg
+          class="hero-art left"
+          data-parallax="0.12"
+          viewBox="0 0 180 180"
+          fill="none"
+          aria-hidden="true"
+        >
+          <path
+            d="M28 144c32-16 54-18 77-8 19 8 31 9 49-1"
+            stroke="#b8cdbc"
+            stroke-width="2"
+            stroke-linecap="round"
+          />
+          <path
+            d="M50 135c15-17 24-34 27-58 18 16 26 30 28 49M74 102c-13-5-22-13-29-26 17 2 30 8 39 20M89 119c9-14 22-22 38-25-5 15-16 26-34 33"
+            stroke="#d1b77c"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <circle cx="129" cy="48" r="16" fill="#e9c98c" fill-opacity=".7" />
+        </svg>
+        <svg
+          class="hero-art"
+          data-parallax="0.2"
+          viewBox="0 0 240 190"
+          fill="none"
+          aria-hidden="true"
+        >
+          <path
+            d="M10 153c31-12 57-11 84 0 23 9 45 8 67-2 21-10 41-11 69-2"
+            stroke="#9fbaa7"
+            stroke-width="2"
+            stroke-linecap="round"
+          />
+          <path
+            d="M26 154c33-26 59-36 87-29 25 7 42 2 68-17 13 20 26 34 44 46"
+            stroke="#bfd1c4"
+            stroke-width="1.5"
+          />
+          <path
+            d="M130 119v-64m0 0c-22 13-32 28-37 48h37m0-48c18 13 27 28 32 48h-32m0-48 11 48"
+            stroke="#738e7e"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <path d="M117 119h27" stroke="#c7a864" stroke-width="3" stroke-linecap="round" />
+          <circle cx="192" cy="46" r="18" fill="#e7c887" fill-opacity=".72" />
+        </svg>
+        <div class="hero-inner">
+          <div class="eyebrow">Zuzana Krásová</div>
+          <h1 class="serif">
+            Psychoterapie<br /><em>s dětmi, dospívajícími a mladými dospělými</em>
+          </h1>
+          <p class="hero-copy">Cesta dlouhá tisíc mil začíná pod tvýma nohama.</p>
+          <div class="hero-actions">
+            <a class="btn" href="#teens">Terapie</a
+            ><a class="btn btn-quiet" href="#workshopy">Workshopy</a>
+          </div>
+        </div>
+        <div class="hero-note"><br /><br /></div>
+      </section>
+      <section class="intro wrap" id="uvod">
+        <div class="intro-grid">
+          <div class="intro-visual">
+            <svg class="sun-art" viewBox="0 0 240 240" fill="none" aria-hidden="true">
+              <circle cx="120" cy="112" r="57" stroke="#c9a868" stroke-width="1.5" />
+              <path
+                d="M120 70v84M120 70c-29 17-43 37-49 64h49m0-64c25 17 37 37 43 64h-43m0-64 15 64"
+                stroke="#899e8c"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M97 154h47M72 178c30-14 64-14 98 0"
+                stroke="#c9a868"
+                stroke-width="1.7"
+                stroke-linecap="round"
+              />
+              <path
+                d="M55 186c15-10 24-23 29-39 10 12 16 24 16 38m-16-19c-9-5-16-12-20-21 12 2 20 7 26 16m3 24c7-10 17-16 29-18-4 11-12 19-26 24"
+                stroke="#d18491"
+                stroke-width="1.7"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <circle cx="173" cy="65" r="7" fill="#e8ca8d" />
+              <circle cx="65" cy="81" r="4" fill="#d18491" />
+            </svg>
+            <div class="visual-caption">Zuzana Krásová</div>
+          </div>
+          <div class="intro-copy">
+            <p class="lead">
+              V terapii se potkáváme hlavně jako lidé. Mezi mnou a dítětem je živý kontakt, který se
+              rodí v prostoru mezi námi. S některými dětmi a mladými lidmi hodně mluvíme, s
+              některými téměř vůbec. Tvoříme, hrajeme si, posloucháme hudbu a příběhy a necháváme
+              tělo, aby nás vedlo. Základy mého přístupu leží v Gestaltu.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="offer pathways" id="terapie">
+        <div class="wrap">
+          <div class="section-head">
+            <h2 class="serif">Najděte svou cestu</h2>
+            <p>Ať přicházíte s dítětem nebo dospívajícím, sami za sebe, tady začněte.</p>
+          </div>
+          <div class="services">
+            <article class="service">
+              <div class="service-icon" aria-hidden="true">✳</div>
+              <h3 class="serif">Děti, teens a mladí dospělí</h3>
+              <p>Terapie slovem, hrou, tvořením, pohybem - a vztahem.</p>
+              <a class="tiny-link" href="#teens">Jak to probíhá <span>→</span></a>
+            </article>
+            <article class="service">
+              <div class="service-icon" aria-hidden="true">⌂</div>
+              <h3 class="serif">Rodiče</h3>
+              <p>
+                Rodiče jsou vždy součástí procesu. Dostanete tipy a informace, které pomáhají
+                porozumět, co se děje.
+              </p>
+              <a class="tiny-link" href="#rodice">Podpora pro rodiče <span>→</span></a>
+            </article>
+            <article class="service">
+              <div class="service-icon" aria-hidden="true">✧</div>
+              <h3 class="serif">Workshopy a besedy</h3>
+              <p>První psychická pomoc, Psychoterapie zblízka a Tvořivé nástroje pro svět dětí.</p>
+              <a class="tiny-link" href="#workshopy">Témata workshopů <span>→</span></a>
+            </article>
+          </div>
+        </div>
+      </section>
+      <section class="approach" id="teens">
+        <div class="wrap approach-grid">
+          <div class="approach-copy">
+            <div class="eyebrow">Terapie jako setkání dvou lidí</div>
+            <h2 class="serif">Terapie jako setkání dvou lidí</h2>
+            <p>
+              <span class="colorfortext" aria-hidden="true">✧</span> Tvá identita: Hledáš sám/sama
+              sebe a svou roli ve světě.
+            </p>
+            <p>
+              <span class="colorfortext" aria-hidden="true">✧</span> Emoce a myšlenky: Zahlcující
+              strach, vztek, smutek, stud nebo naopak prázdnota, otupělost. Nepříjemné myšlenky.
+              Zmatek.
+            </p>
+            <p>
+              <span class="colorfortext" aria-hidden="true">✧</span> Tělo: Tvoje tělo nebo tvoje
+              zdraví ti dává zabrat. Nebo dáváš zabrat ty tvému tělu.
+            </p>
+            <p>
+              <span class="colorfortext" aria-hidden="true">✧</span> Vztahy: Nefunguje ti to s lidmi
+              okolo, s vašima, ve škole, v práci. Nebo v partnerském vztahu.
+            </p>
+            <p>
+              <span class="colorfortext" aria-hidden="true">✧</span> Budoucnost v mlze: Netušíš, co
+              bude dál, ztrácíš směr. Znejišťuje tě, co bude.
+            </p>
+            <p>
+              <span class="colorfortext" aria-hidden="true">✧</span> Jinakost: Nevíš si rady se svou
+              neurodivergencí nebo jakoukoli jinou odlišností.
+            </p>
+            <p>
+              <span class="colorfortext" aria-hidden="true">✧</span> Slepá ulička: Dostal/a ses
+              někam, kde nechceš být, a potřebuješ najít cestu ven.
+            </p>
+            <p>
+              <span class="colorfortext" aria-hidden="true">✧</span> Launch: Nedaří se ti „vyletět z
+              hnízda“.
+            </p>
+          </div>
+          <div
+            class="approach-art"
+            data-parallax="0.08"
+            aria-label="Ilustrace cesty přes zelené kopce za sluncem"
+          >
+            <div class="little-sun"></div>
+            <div class="art-phrase">Věřím v moudrost cesty každého z nás.</div>
+            <div class="hill"></div>
+            <div class="hill two"></div>
+            <div class="path"></div>
+          </div>
+        </div>
+      </section>
+      <section class="offer prose-section children-section" id="deti">
+        <div class="wrap">
+          <div class="section-head">
+            <div class="eyebrow">Děti</div>
+            <h2 class="serif">Co děláme a kam směřujeme</h2>
+            <p>Dětský svět je plný obrazů, symbolů, hry a pohybu.</p>
+            <p>
+              Když dítě prožívá něco náročného, často to neumí vyjádřit a zpracovat pomocí slov. A
+              tak mimo mluvení k k terapii využíváme tvoření, kreslení, psaní a vyprávění příběhů.
+              Hrajeme hry. Využíváme terapeutické karty a také figurky, plyšáky a maňásky. S
+              některými se vydáváme do vizualizací a snů. Stavíme bunkry a pelíšky. Pořádáme zápasy
+              a hýbeme se. Někdy naopak plánujeme konkrétní kroky a vize, tvoříme seznamy a
+              mindmapy.
+            </p>
+          </div>
+          <div class="services">
+            <article class="service">
+              <p>
+                Dítě má šanci se v terapii zažít jinak a nově chápat sám sebe. Buduje důvěru ve své
+                tělo a v jeho signály. Své emoce prožívá naplno a zároveň se jim nepoddává - jsou
+                pro něj informací, začíná je používat jako ukazatele na cestě. Nachází oporu
+                sám/sama v sobě a to mu umožňuje postavit plněji do života a do vztahů.
+              </p>
+              <p></p>
+              <p></p>
+              <p></p>
+              <p></p>
+              <p></p>
+            </article>
+          </div>
+        </div>
+      </section>
+      <section class="offer prose-section parents-section" id="rodice">
+        <div class="wrap">
+          <div class="section-head">
+            <div class="eyebrow">Rodiče</div>
+            <h2 class="serif">Spolupráce s rodiči</h2>
+          </div>
+          <div class="services">
+            <article class="service">
+              <p>
+                Rodiče dětí a dospívajících mohou být hlavní hybnou silou na cestě jejich dítěte
+                zpět do jeho rovnováhy. A tak - pokud jsou sami otevřeni změně - jsou součástí
+                psychoterapeutického procesu.
+              </p>
+              <p></p>
+              <p id="rodice-uvod" class="has-accent-marker">
+                <span class="text-accent" aria-hidden="true">✧</span> Díváme se na příběh dítěte a
+                rodiny a na to, kde propisuje do současnosti. Zkoumáme, kde ladí a neladí to, co od
+                dítěte očekává rodič, škola, školka, společnost, a co potřebuje dítě samotné.
+              </p>
+              <p class="has-accent-marker">
+                <span class="text-accent" aria-hidden="true">✧</span> Aby se rodiče mohli opřít o
+                sebe a provést dítě těžkými situacemi sami, dostávají tipy (např. jak s dítětem
+                mluvit i s ohledem k jeho věku, čím ho doma podpořit, co změnit v jeho prostředí,
+                jak pracovat se sebou v náročných situacích s dítětem) a informace, které jim
+                pomáhají porozumět, co se vlastně děje.
+              </p>
+              <p class="has-accent-marker">
+                <span class="text-accent" aria-hidden="true">✧</span>Vycházíme i z toho, co rodiče v
+                kontaktu s dítětem sami prožívají a jak o něm přemýšlí.
+              </p>
+              <p class="has-accent-marker">
+                Někdy se spolu dokonce na prvním setkání dohodneme, že dítě do terapie nepůjde a že
+                se budeme potkávat jen spolu.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+      <section class="workshops" id="workshopy">
+        <div class="wrap">
+          <div class="section-head">
+            <h2 class="serif">Workshopy</h2>
+            <p>
+              Pro rodiče, pedagogy, lektory i dospívající. Rozklikněte si téma, které vás zajímá.
+            </p>
+          </div>
+          <div class="workshop-grid">
+            <article class="workshop workshop-inline">
+              <details>
+                <summary>
+                  <span class="workshop-number" aria-hidden="true">01</span
+                  ><span class="workshop-summary-title"
+                    >Kotva v bouři: první psychická pomoc, když jde do tuhého</span
+                  ><span class="workshop-card-teaser"
+                    >Pro dospělé i dospívající. Jak se stát oporou pro lidi kolem sebe po nehodě,
+                    úrazu nebo šoku.</span
+                  >
+                </summary>
+                <div class="workshop-inline-content">
+                  <h3 class="workshop-doc-title">
+                    Kotva v bouři: První psychická pomoc, když jde do tuhého
+                  </h3>
+                  <div class="workshop-detail-content">
+                    <p class="workshop-detail-lead">
+                      Naučte se, jak se st&#225;t oporou pro lidi, kteř&#237; jsou v&#160;krizi. Jak
+                      v&#160;osobn&#237;, tak vteřiny po nehodě, &#250;razu, po př&#237;rodn&#237;
+                      katastrofě.
+                    </p>
+                    <p>
+                      Když se stane nehoda, zraněn&#237; nebo n&#225;s zas&#225;hne nečekan&#225;
+                      zpr&#225;va, automaticky vol&#225;me z&#225;chranku a řeš&#237;me fyzick&#233;
+                      bezpeč&#237;. Co se ale v tu chv&#237;li děje s lidskou mysl&#237;,
+                      s&#160;tělem a emocemi? Jak pomoci člověku, kter&#253; se třese šokem,
+                      pl&#225;če, prož&#237;v&#225; paniku, vůbec nereaguje, odch&#225;z&#237;,
+                      někoho napad&#225;, neust&#225;le něco opakuje?
+                    </p>
+                    <p>
+                      Prvn&#237; psychick&#225; pomoc je kl&#237;čov&#253; předstupeň krizov&#233;
+                      intervence. Nemus&#237;te b&#253;t psycholog, abyste ji zvl&#225;dli. Naopak,
+                      stač&#237; zn&#225;t p&#225;r principů a doplnit je vlastn&#237;
+                      lidskost&#237;. Na tomto workshopu se nauč&#237;te kroky, jak stabilizovat
+                      člověka v akutn&#237;m stresu. A z&#225;roveň l&#233;pe porozum&#237;te tomu,
+                      jak v krizi reagujete vy sami. Je to tak&#233; poutav&#253; a praktick&#253;
+                      &#250;vod do světa psychologie jako takov&#233;.
+                    </p>
+                    <h3>✨ Pro koho je workshop určen?</h3>
+                    <ul class="workshop-bullets">
+                      <li>
+                        Pro dosp&#237;vaj&#237;c&#237; i dospěl&#233;, kteř&#237; chtěj&#237; vědět,
+                        jak zachovat chladnou hlavu a pomoci. Workshopy pro
+                        dosp&#237;vaj&#237;c&#237; a dospěl&#233; se konaj&#237; zvl&#225;šť.
+                      </li>
+                      <li>
+                        Pro všechny, kteř&#237; chtěj&#237; b&#253;t připraveni na krizov&#233;
+                        situace (nehody, &#250;razy, n&#225;ročn&#233; rodinn&#233; či školn&#237;
+                        situace).
+                      </li>
+                      <li>
+                        Pro zv&#237;dav&#233;, kter&#233; l&#225;k&#225; psychologie a chtěj&#237;
+                        si osahat jej&#237; opravdovou podobu.
+                      </li>
+                    </ul>
+                    <h3>&#128161; Co na workshopu prozkoum&#225;me?</h3>
+                    <h3>1. Jak funguje naše psychika pod tlakem</h3>
+                    <ul class="workshop-bullets">
+                      <li>
+                        Projevy extr&#233;mn&#237;ho stresu: &#218;točen&#237;, &#250;těk,
+                        zamrz&#225;n&#237;, ale tak&#233; omdl&#233;v&#225;n&#237;, snaha se
+                        zavděčit nebo znevažov&#225;n&#237; v&#225;žnosti situace.
+                      </li>
+                      <li>
+                        Pohled do vlastn&#237;ho nitra: Co se děje s našimi emocemi, mysl&#237; a
+                        tělesn&#253;mi projevy, když se ocitneme v z&#225;těžov&#233; situaci.
+                      </li>
+                    </ul>
+                    <h3>2. Kuchařka prvn&#237; psychick&#233; pomoci</h3>
+                    <ul class="workshop-bullets">
+                      <li>
+                        Co dělat (a co rozhodně nedělat): Konkr&#233;tn&#237; tipy, kter&#233;
+                        zraněn&#233;mu či šokovan&#233;mu člověku pomohou, a jak&#233; naopak
+                        situaci zhoršuj&#237;.
+                      </li>
+                      <li>
+                        Cestě ke stabilitě: Praktick&#233; techniky, jak vr&#225;tit dospěl&#233;ho
+                        i d&#237;tě zp&#225;tky do reality a pocitu bezpeč&#237; (a pomoct tak
+                        minimalizovat riziko vzniku posttraumatick&#233; reakce).
+                      </li>
+                      <li>
+                        Bezpeč&#237; pro zachr&#225;nce: Jak pomoci druh&#233;mu a přitom
+                        respektovat vlastn&#237; psychiku.
+                      </li>
+                    </ul>
+                    <h3>❤️ Co si z workshopu odnesete?</h3>
+                    <p>
+                      Odejdete s vědom&#237;m, že krize se d&#225; zvl&#225;dnout. Z&#237;sk&#225;te
+                      vnitřn&#237; klid, praktick&#233; dovednosti a jistotu, že až se př&#237;ště v
+                      okol&#237; stane něco nečekan&#233;ho, budete vědět, jak pro druh&#233;ho, ať
+                      už dospěl&#233;ho nebo d&#237;tě, vytvořit bezpečnou „kotvu“ dř&#237;v, než
+                      doraz&#237; profesion&#225;ln&#237; pomoc.
+                    </p>
+                  </div>
+                </div>
+              </details>
+            </article>
+            <article class="workshop workshop-inline">
+              <details>
+                <summary>
+                  <span class="workshop-number" aria-hidden="true">02</span
+                  ><span class="workshop-summary-title">Psychoterapie zblízka</span
+                  ><span class="workshop-card-teaser"
+                    >Pro dospělé a dospívající. Praktický průvodce procesem terapie pro ty, kdo
+                    hledají pomoc pro sebe či své děti, i pro ty, které láká profese
+                    psychoterapeuta.</span
+                  >
+                </summary>
+                <div class="workshop-inline-content">
+                  <h3 class="workshop-doc-title">Psychoterapie zblízka</h3>
+                  <div class="workshop-detail-content">
+                    <p class="workshop-detail-lead">
+                      Poodhalte z&#225;voj terapeutick&#233; m&#237;stnosti. Praktick&#253;
+                      devaten&#225;ctiminutov&#253; průvodce procesem terapie pro ty, kteř&#237;
+                      chtěj&#237; vědět, co psychoterapie (ne)obn&#225;š&#237;.
+                    </p>
+                    <p>
+                      Vstup do psychoterapie b&#253;v&#225; často spojen s obavami z nezn&#225;ma.
+                      Co se za zavřen&#253;mi dveřmi děje? Jak se z obyčejn&#233;ho rozhovoru
+                      st&#225;v&#225; l&#233;čiv&#253; proces? Jak&#253; je rozd&#237;l mezi
+                      terapi&#237; s&#160;dětmi, dosp&#237;vaj&#237;c&#237;mi a dospěl&#253;mi? A co
+                      to obn&#225;š&#237;, sedět na t&#233; druh&#233; židli – na židli terapeuta?
+                      Co mus&#237; terapeut vlastně zn&#225;t nebo umět, jak&#253; by měl nebo neměl
+                      b&#253;t? Mus&#237; b&#253;t s&#225;m „vyl&#233;čen“, aby mohl „l&#233;čit“?
+                      Co terapie může přin&#233;st a co ne? Jsou tac&#237;, pro kter&#233; terapie
+                      vhodn&#225; nen&#237;?
+                    </p>
+                    <p>
+                      Zvu v&#225;s na workshop, kter&#253; v&#225;m srozumitelně a s respektem
+                      přibl&#237;ž&#237; psychoterapii a tak&#233; nabour&#225; někter&#225; tabu a
+                      m&#253;ty. Je to pozv&#225;n&#237; do z&#225;kulis&#237; procesu, kter&#225;
+                      někoho fascinuje a jin&#233; zneklidňuje.
+                    </p>
+                    <h3>Pro koho je workshop určen?</h3>
+                    <ul class="workshop-bullets">
+                      <li>
+                        Pro zv&#237;dav&#233; dosp&#237;vaj&#237;c&#237;, kter&#233; l&#225;k&#225;
+                        poznat, jak terapie funguje.
+                      </li>
+                      <li>
+                        Pro ty, kteř&#237; zvažuj&#237; terapii a chtěj&#237; vědět, co od n&#237;
+                        (ne)čekat.
+                      </li>
+                      <li>
+                        Pro budouc&#237; kolegy, kter&#233; l&#225;k&#225; psychoterapie jako
+                        profese a přem&#253;šlej&#237; o studiu psychologie.
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </details>
+            </article>
+            <article class="workshop workshop-inline">
+              <details>
+                <summary>
+                  <span class="workshop-number" aria-hidden="true">03</span
+                  ><span class="workshop-summary-title">Do světa dětí tvořivostí a hrou</span
+                  ><span class="workshop-card-teaser"
+                    >Pro rodiče a pedagogy. Tvořivé techniky inspirované přístupem Violet Oaklander,
+                    bez nutnosti terapeutického vzdělání.</span
+                  >
+                </summary>
+                <div class="workshop-inline-content">
+                  <h3 class="workshop-doc-title">Workshop: Do světa dětí skrze tvořivost a hru</h3>
+                  <div class="workshop-detail-content">
+                    <p class="workshop-detail-lead">
+                      Objevte s&#237;lu tvořiv&#253;ch technik a naučte se, jak se s dětmi spojit na
+                      hlubš&#237; &#250;rovni a pomoct jim zpracovat těžk&#233; z&#225;žitky a
+                      emoce. V&#160;rodině, v&#160;r&#225;mci kroužků nebo školy.
+                    </p>
+                    <p>
+                      Slova často nestač&#237;. Někdy vid&#237;te, že se d&#237;tě tr&#225;p&#237;,
+                      je pln&#233; vzteku, napět&#237;, žalu nebo se uzav&#237;r&#225; do sebe, a vy
+                      mu nedok&#225;žete běžn&#253;m rozhovorem pomoci.
+                    </p>
+                    <p>
+                      Dětsk&#253; svět je pln&#253; obrazů, symbolů a pohybu. Když d&#237;tě
+                      prož&#237;v&#225; něco n&#225;ročn&#233;ho, často to neum&#237; pojmenovat a
+                      zpracovat pomoc&#237; slov. Vyjadřuje to ale pohybem, tělem, hrou,
+                      př&#237;běhy. Zvu v&#225;s na praktick&#253; workshop, kde se
+                      sezn&#225;m&#237;te s tvořiv&#253;mi technikami, kter&#233; můžete okamžitě
+                      zač&#237;t použ&#237;vat v každodenn&#237;m životě – bez nutnosti
+                      terapeutick&#233;ho vzděl&#225;n&#237;.
+                    </p>
+                    <h3>✨ Co se na workshopu nauč&#237;te?</h3>
+                    <p>
+                      Pozn&#225;te, jak běžn&#233; tvořiv&#233; aktivity proměnit v most k
+                      dětsk&#233; duši. Vyzkouš&#237;te si pr&#225;ci s n&#225;stroji, jako jsou:
+                    </p>
+                    <ul class="workshop-bullets workshop-tools">
+                      <li>&#128214; Př&#237;běhy a metafory</li>
+                      <li>&#128164; Sny a fantazie</li>
+                      <li>&#127912;Kresba a malov&#225;n&#237;</li>
+                      <li>Terapeutick&#233; karty</li>
+                      <li>&#129496; Pr&#225;ce s tělem a pohybov&#233; hry</li>
+                      <li>&#129528; Figurky a plyš&#225;ci</li>
+                      <li>Senzomotorick&#233; hry</li>
+                    </ul>
+                    <h3>&#128161; V jak&#253;ch situac&#237;ch v&#225;m tyto techniky pomohou?</h3>
+                    <p>Představen&#233; metody v&#225;m pomohou, když d&#237;tě potřebuje:</p>
+                    <ul class="workshop-bullets">
+                      <li>
+                        Zpracovat těžk&#233; emoce jako je strach, vztek, smutek, &#250;zkost, stud,
+                        vina
+                      </li>
+                      <li>
+                        Uvolnit „zaseklou“ energii a napět&#237;, kter&#233; se může projevovat
+                        např. vztek&#225;n&#237;m, nepozornost&#237; nebo apati&#237;.
+                      </li>
+                      <li>
+                        Z&#237;skat nadhled a dostat se do kontaktu s&#160;nov&#253;mi možnostmi.
+                      </li>
+                      <li>
+                        Uzavř&#237;t nedokončen&#233; situace, kter&#233; v sobě nos&#237; a
+                        kter&#233; ho podvědomě t&#237;ž&#237;.
+                      </li>
+                      <li>
+                        Podpořit sebevědom&#237; d&#237;těte t&#237;m, že přijme odm&#237;tan&#233;
+                        č&#225;sti sebe sam&#233;ho.
+                      </li>
+                    </ul>
+                    <h3>❤️ Největš&#237; př&#237;nos? Skutečn&#233; napojen&#237; na d&#237;tě</h3>
+                    <p>
+                      T&#237;m nejcennějš&#237;m nen&#237; jen „kuchařka“ na techniky. Je to
+                      př&#237;ležitost zaž&#237;t s d&#237;tětem opravdov&#253; kontakt a
+                      pos&#237;lit v&#225;š vztah zvl&#225;šť. Když vstoup&#237;te do jeho světa
+                      prostřednictv&#237;m hry a tvořen&#237;, d&#237;tě se c&#237;t&#237; skutečně
+                      slyšeno a viděno. Miz&#237; bari&#233;ry a vytv&#225;ř&#237; se hlubš&#237;
+                      pouto, kter&#233; je samo o sobě l&#233;čiv&#233;.
+                    </p>
+                    <h3>&#128101; Pro koho je workshop určen?</h3>
+                    <ul class="workshop-bullets">
+                      <li>
+                        Pro všechny, kter&#233; zaj&#237;m&#225; pr&#225;ce s&#160;dětmi do 12ti let
+                      </li>
+                      <li>
+                        Rodiče, kteř&#237; chtěj&#237; l&#233;pe rozumět sv&#253;m dětem a pomoci
+                        jim zvl&#225;dat jejich těžkosti doma.
+                      </li>
+                      <li>
+                        Pedagogov&#233;, vychovatel&#233; a asistenti, kteř&#237; hledaj&#237;
+                        nov&#233;, praktick&#233; a respektuj&#237;c&#237; n&#225;stroje pro
+                        pr&#225;ci s dětmi.
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </details>
+            </article>
+          </div>
+        </div>
+      </section>
+      <section class="offer" id="cena">
+        <div class="wrap">
+          <div class="section-head">
+            <div class="eyebrow">Cena a místo</div>
+            <h2 class="serif">Psychoterapeutická setkání</h2>
+          </div>
+          <div class="services">
+            <article class="service">
+              <p>
+                Délka: 50 minut<br />Cena: 1 500 Kč (hotově nebo na účet)<br />Místo: Dobříš –
+                Větrník
+              </p>
+              <p></p>
+              <p class="has-accent-marker">
+                Není u mě bohužel místnost, ve které by rodiče mohli čekat na dítě během terapie.
+                Ale jsme blízko přírody a dá se u nás hezky procházet. Centrum je od nás asi 5 minut
+                autem, v blízkosti je restaurace Krmelec Vlaška.
+              </p>
+              <p class="has-accent-marker">Setkání s rodiči mohou výjimečně probíhat i online.</p>
+            </article>
+            <article class="service">
+              <h3 class="serif">Workshopy a besedy</h3>
+              <p>
+                Cena: 2 200–3 000 Kč za hodinu a skupinu, plus náklady na dopravu<br />Jazyk:
+                čeština, angličtina, němčina<br />Místo: u vás, nebo u mě na Dobříši, pokud jste
+                skupina do 6 lidí
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+      <section class="intro wrap" id="uvod">
+        <div class="intro-grid">
+          <div class="intro-visual">
+            <svg class="sun-art" viewBox="0 0 240 240" fill="none" aria-hidden="true">
+              <circle cx="120" cy="112" r="57" stroke="#c9a868" stroke-width="1.5" />
+              <path
+                d="M120 70v84M120 70c-29 17-43 37-49 64h49m0-64c25 17 37 37 43 64h-43m0-64 15 64"
+                stroke="#899e8c"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <circle cx="173" cy="65" r="7" fill="#e8ca8d" />
+            </svg>
+            <div class="visual-caption">Zuzana Krásová</div>
+          </div>
+          <div class="intro-copy">
+            <div class="eyebrow">O mně</div>
+            <h2 class="serif">Zuzana Krásová</h2>
+            <p>
+              Žiju se svým mužem a našimi dětmi, synem a dcerou, na Dobříši, v domku s výhledem na
+              brdské kopce. Tam se také nachází prostor, ve kterém se potkávám s dětmi,
+              dospívajícími a jejich rodiči v rámci psychoterapeutických setkání.
+            </p>
+            <p>
+              Základy mého přístupu k terapii leží v Gestaltu. Tento směr jsem si vybrala „náhodou“
+              ve svých 28 letech. Sedí mi hlavně pro jeho důraz na plné projevení toho, co JE.
+            </p>
+            <p>
+              Psychologii jsem vystudovala na univerzitě v Regensburgu v Německu. Součástí mé cesty
+              byla a stále je řada pracovních a studijních aktivit na univerzitách a ve firmách v
+              Německu, ale také v Polsku, Austrálii, Rakousku, na Mallorce a v Itálii.
+            </p>
+            <p>
+              Je mi blízké vytvářet prostory, které propojují rodiny a podporují mladé lidi v jejich
+              sebeuvědomění a naplňování jejich osobité cesty. V roce 2023 jsem proto založila a
+              vedu druhostupňovou Komunitní školu DobroDruzi na Mníšku pod Brdy.
+            </p>
+            <p>Vedu workshopy a besedy pro rodiče a učitele či lektory u nás nebo v zahraničí.</p>
+            <p>
+              V rámci Gestalt institutu Praha jsem výcvikovou lektorkou. Společně s kolegyní Sylvou
+              Tichotovou vedu a koncipuju postgraduální výcvik pro budoucí dětské terapeuty.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="contact" id="kontakt">
+        <div class="wrap contact-inner">
+          <div class="eyebrow">Kontakt</div>
+          <h2 class="serif">Napište nebo zavolejte</h2>
+          <div class="contact-whatsapp">
+            <p>Nejlépe mi pište na WhatsApp</p>
+            <a
+              class="btn btn-whatsapp"
+              href="https://wa.me/420602676482"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Napsat Zuzaně Krásové přes WhatsApp"
+              >Napsat na WhatsApp</a
+            >
+          </div>
+          <div class="contact-row">
+            <a class="btn" href="mailto:zuzakrasova@gmail.com">zuzakrasova@gmail.com</a
+            ><a class="btn btn-quiet" href="tel:+420602676482">602 676 482</a>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="wrap footer-inner">
+        <span class="footer-brand">Zuzana Krásová</span><span>© Zuzana Krásová · Dobříš</span
+        ><span
+          ><a
+            class="footer-credit"
+            href="https://ondra360.github.io/Moje-stranky/"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Website was created by onkrasa17@gmail.com</a
+          ></span
+        >
+      </div>
+    </footer>
+    <script>
+      const toggle = document.querySelector(".menu-toggle");
+      const links = document.querySelector(".nav-links");
+      toggle.addEventListener("click", () => {
+        const open = toggle.getAttribute("aria-expanded") === "true";
+        toggle.setAttribute("aria-expanded", String(!open));
+        toggle.setAttribute("aria-label", open ? "Otevřít navigaci" : "Zavřít navigaci");
+        links.classList.toggle("open", !open);
+      });
+      links.querySelectorAll("a").forEach((a) =>
+        a.addEventListener("click", () => {
+          links.classList.remove("open");
+          toggle.setAttribute("aria-expanded", "false");
+          toggle.setAttribute("aria-label", "Otevřít navigaci");
+        }),
+      );
+      const year = document.getElementById("year");
+      if (year) year.textContent = new Date().getFullYear();
+      const revealItems = document.querySelectorAll(
+        ".section-head,.intro-visual,.intro-copy>*,.service,.approach-copy>*,.approach-art,.workshop,.workshop-note,.contact-inner>*",
+      );
+      revealItems.forEach((item, index) => {
+        item.classList.add("reveal");
+        item.style.setProperty("--reveal-delay", `${(index % 3) * 90}ms`);
+      });
+      document.body.classList.add("motion-ready");
+      if ("IntersectionObserver" in window) {
+        const observer = new IntersectionObserver(
+          (entries) =>
+            entries.forEach((entry) => {
+              if (entry.isIntersecting) {
+                entry.target.classList.add("is-visible");
+                observer.unobserve(entry.target);
+              }
+            }),
+          { threshold: 0.13, rootMargin: "0px 0px -35px 0px" },
+        );
+        revealItems.forEach((item) => observer.observe(item));
+      } else revealItems.forEach((item) => item.classList.add("is-visible"));
+      const progress = document.querySelector(".scroll-progress span");
+      let ticking = false;
+      const updateScroll = () => {
+        const max = document.documentElement.scrollHeight - window.innerHeight;
+        progress.style.setProperty("--progress", max > 0 ? window.scrollY / max : 0);
+        document.body.classList.toggle("is-scrolled", window.scrollY > 24);
+        ticking = false;
+      };
+      window.addEventListener(
+        "scroll",
+        () => {
+          if (!ticking) {
+            requestAnimationFrame(updateScroll);
+            ticking = true;
+          }
+        },
+        { passive: true },
+      );
+      updateScroll();
+      const hero = document.querySelector(".hero");
+      if (hero) {
+        hero.addEventListener("pointermove", (event) => {
+          const rect = hero.getBoundingClientRect();
+          const x = (event.clientX - rect.left) / rect.width - 0.5;
+          const y = (event.clientY - rect.top) / rect.height - 0.5;
+          hero.style.setProperty("--pointer-x", x * 16 + "px");
+          hero.style.setProperty("--pointer-y", y * 12 + "px");
+        });
+        hero.addEventListener("pointerleave", () => {
+          hero.style.setProperty("--pointer-x", "0px");
+          hero.style.setProperty("--pointer-y", "0px");
+        });
+      }
+      document.querySelectorAll(".pathways .service").forEach((card) =>
+        card.addEventListener("pointermove", (event) => {
+          const rect = card.getBoundingClientRect();
+          card.style.setProperty("--spot-x", event.clientX - rect.left + "px");
+          card.style.setProperty("--spot-y", event.clientY - rect.top + "px");
+        }),
+      );
+      document.querySelectorAll("[data-parallax]").forEach((item) => {
+        const speed = Number(item.dataset.parallax);
+        window.addEventListener(
+          "scroll",
+          () => {
+            item.style.setProperty(
+              "--scroll-shift",
+              Math.round(window.scrollY * speed * 0.025) + "px",
+            );
+          },
+          { passive: true },
+        );
+      });
+      document.querySelectorAll(".workshop-inline details").forEach((details) => {
+        const card = details.closest(".workshop-inline");
+        details.addEventListener("toggle", () => card.classList.toggle("is-open", details.open));
+      });
+    </script>
+  </body>
 </html>
-
-
-
-
-
-
-
-
-
-
