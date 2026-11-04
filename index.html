@@ -1860,6 +1860,34 @@
         color: var(--rose-deep);
         text-decoration: underline;
       }
+      .intro-visual {
+        isolation: isolate;
+      }
+      .intro-visual .profile-photo {
+        position: absolute;
+        z-index: 0;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        border-radius: inherit;
+        object-fit: cover;
+        object-position: 50% 30%;
+      }
+      .intro-visual::before,
+      .intro-visual::after {
+        z-index: 1;
+        pointer-events: none;
+      }
+      .intro-visual .visual-caption {
+        z-index: 2;
+        bottom: 20px;
+        width: max-content;
+        max-width: calc(100% - 32px);
+        padding: 8px 16px;
+        background: #fbfaf6e6;
+        border-radius: 999px;
+        box-shadow: 0 4px 16px #263a2c18;
+      }
     </style>
   </head>
   <body>
@@ -1944,9 +1972,7 @@
         </svg>
         <div class="hero-inner">
           <div class="eyebrow">Dipl.-Psych.Univ. Zuzana Krásová</div>
-          <h1 class="serif">
-            Terapie<br /><em>s dětmi, dospívajícími a mladými dospělými</em>
-          </h1>
+          <h1 class="serif">Terapie<br /><em>s dětmi, dospívajícími a mladými dospělými</em></h1>
           <p class="hero-copy">Cesta dlouhá tisíc mil začíná pod tvýma nohama.</p>
           <div class="hero-actions">
             <a class="btn" href="#teens">Terapie</a
@@ -1958,36 +1984,23 @@
       <section class="intro wrap" id="uvod">
         <div class="intro-grid">
           <div class="intro-visual">
-            <svg class="sun-art" viewBox="0 0 240 240" fill="none" aria-hidden="true">
-              <circle cx="120" cy="112" r="57" stroke="#c9a868" stroke-width="1.5" />
-              <path
-                d="M120 70v84M120 70c-29 17-43 37-49 64h49m0-64c25 17 37 37 43 64h-43m0-64 15 64"
-                stroke="#899e8c"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-              <path
-                d="M97 154h47M72 178c30-14 64-14 98 0"
-                stroke="#c9a868"
-                stroke-width="1.7"
-                stroke-linecap="round"
-              />
-              <path
-                d="M55 186c15-10 24-23 29-39 10 12 16 24 16 38m-16-19c-9-5-16-12-20-21 12 2 20 7 26 16m3 24c7-10 17-16 29-18-4 11-12 19-26 24"
-                stroke="#d18491"
-                stroke-width="1.7"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-              <circle cx="173" cy="65" r="7" fill="#e8ca8d" />
-              <circle cx="65" cy="81" r="4" fill="#d18491" />
-            </svg>
+            <img
+              class="profile-photo"
+              src="zuzana-krasova.jpeg"
+              alt="Zuzana Krásová"
+              loading="lazy"
+            />
             <div class="visual-caption">Zuzana Krásová</div>
           </div>
           <div class="intro-copy">
             <p class="lead">
-Terapeutická sezení jsou především autentická lidská setkání. Společně v nich tvoříme prostor, kde dítě nebo dospívající může skrze dialog nebo skrze tvořivé aktivity vyjádřit přesně to, co v něm zrovna žije, objevovat svou vlastní sílu a znovuobjevit ty části sebe sama, které musely být uzamčeny. Ať se moji klienti nacházejí kdekoli, vydávám se za nimi právě tam. Cílem není dokonalý člověk, ale mladá osobnost s pevnou vnitřní oporou, která je plně přítomná ve svém prožívání a v kontaktu se sebou i světem.
+              Terapeutická sezení jsou především autentická lidská setkání. Společně v nich tvoříme
+              prostor, kde dítě nebo dospívající může skrze dialog nebo skrze tvořivé aktivity
+              vyjádřit přesně to, co v něm zrovna žije, objevovat svou vlastní sílu a znovuobjevit
+              ty části sebe sama, které musely být uzamčeny. Ať se moji klienti nacházejí kdekoli,
+              vydávám se za nimi právě tam. Cílem není dokonalý člověk, ale mladá osobnost s pevnou
+              vnitřní oporou, která je plně přítomná ve svém prožívání a v kontaktu se sebou i
+              světem.
             </p>
           </div>
         </div>
@@ -2008,9 +2021,7 @@ Terapeutická sezení jsou především autentická lidská setkání. Společn�
             <article class="service">
               <div class="service-icon" aria-hidden="true">⌂</div>
               <h3 class="serif">Rodiče</h3>
-              <p>
-                Rodiče, ideálně oba, jsou součástí procesu. Společně tvoříme tým.
-              </p>
+              <p>Rodiče, ideálně oba, jsou součástí procesu. Společně tvoříme tým.</p>
               <a class="tiny-link" href="#rodice">Podpora pro rodiče <span>→</span></a>
             </article>
             <article class="service">
@@ -2028,8 +2039,8 @@ Terapeutická sezení jsou především autentická lidská setkání. Společn�
             <div class="eyebrow">Teenageři a mladí dospělí do 25 let</div>
             <h2 class="serif">Jaké téma je to tvé?</h2>
             <p>
-              <span class="colorfortext" aria-hidden="true">✧</span> Identita: Hledáš sám/sama
-              sebe a svou roli ve světě. Chceš si líp rozumět. Stojíš o větší autenticitu.
+              <span class="colorfortext" aria-hidden="true">✧</span> Identita: Hledáš sám/sama sebe
+              a svou roli ve světě. Chceš si líp rozumět. Stojíš o větší autenticitu.
             </p>
             <p>
               <span class="colorfortext" aria-hidden="true">✧</span> Emoce a myšlenky: Zahlcující
@@ -2045,7 +2056,8 @@ Terapeutická sezení jsou především autentická lidská setkání. Společn�
               okolo, s vašima, ve škole, v práci. Nebo v partnerském vztahu.
             </p>
             <p>
-              <span class="colorfortext" aria-hidden="true">✧</span> Budoucnost v mlze: Ztrácíš směr. Znejišťuje tě, co bude.
+              <span class="colorfortext" aria-hidden="true">✧</span> Budoucnost v mlze: Ztrácíš
+              směr. Znejišťuje tě, co bude.
             </p>
             <p>
               <span class="colorfortext" aria-hidden="true">✧</span> Jinakost: Nevíš si rady se svou
@@ -2056,8 +2068,8 @@ Terapeutická sezení jsou především autentická lidská setkání. Společn�
               někam, kde nechceš být, a potřebuješ najít cestu ven.
             </p>
             <p>
-              <span class="colorfortext" aria-hidden="true">✧</span> "Launch": Nedaří se ti „vyletět z
-              hnízda“.
+              <span class="colorfortext" aria-hidden="true">✧</span> "Launch": Nedaří se ti „vyletět
+              z hnízda“.
             </p>
           </div>
           <div
@@ -2083,9 +2095,8 @@ Terapeutická sezení jsou především autentická lidská setkání. Společn�
               Když dítě prožívá něco náročného, často to neumí vyjádřit a zpracovat pomocí slov. A
               tak mimo mluvení k terapii využíváme tvoření, kreslení, psaní a vyprávění příběhů.
               Hrajeme hry. Využíváme terapeutické karty a také figurky, plyšáky a maňásky. S
-              některými se vydáváme do vizualizací a snů. Stavíme bunkry a pelíšky. Zápasíme
-              a hýbeme se. Někdy naopak plánujeme konkrétní kroky, tvoříme seznamy a
-              mindmapy.
+              některými se vydáváme do vizualizací a snů. Stavíme bunkry a pelíšky. Zápasíme a
+              hýbeme se. Někdy naopak plánujeme konkrétní kroky, tvoříme seznamy a mindmapy.
             </p>
           </div>
           <div class="services">
@@ -2121,11 +2132,11 @@ Terapeutická sezení jsou především autentická lidská setkání. Společn�
               <p></p>
               <p id="rodice-uvod" class="has-accent-marker">
                 <span class="text-accent" aria-hidden="true">✧</span> Díváme se na příběh dítěte a
-                rodiny a na to, kde propisuje do současnosti.    
+                rodiny a na to, kde propisuje do současnosti.
               </p>
               <p class="has-accent-marker">
-                <span class="text-accent" aria-hidden="true">✧</span>Zkoumáme, kde ladí a neladí to, co od
-                dítěte očekává rodič, škola, školka, společnost, a co potřebuje dítě samotné.
+                <span class="text-accent" aria-hidden="true">✧</span>Zkoumáme, kde ladí a neladí to,
+                co od dítěte očekává rodič, škola, školka, společnost, a co potřebuje dítě samotné.
               </p>
               <p class="has-accent-marker">
                 <span class="text-accent" aria-hidden="true">✧</span> Aby se rodiče mohli opřít o
@@ -2138,8 +2149,8 @@ Terapeutická sezení jsou především autentická lidská setkání. Společn�
                 kontaktu s dítětem sami prožívají a jak o něm přemýšlí.
               </p>
               <p class="has-accent-marker">
-                Někdy se spolu na prvním setkání dohodneme, že dítě do terapie nepůjde a že
-                se budeme potkávat jen spolu.
+                Někdy se spolu na prvním setkání dohodneme, že dítě do terapie nepůjde a že se
+                budeme potkávat jen spolu.
               </p>
             </article>
           </div>
@@ -2150,7 +2161,8 @@ Terapeutická sezení jsou především autentická lidská setkání. Společn�
           <div class="section-head">
             <h2 class="serif">Workshopy</h2>
             <p>
-              S dospělými i dospívajícími se ráda potkávám nad tématy, které je "pálí" a šiju jim je na míru. Příklady workshopů tu:  
+              S dospělými i dospívajícími se ráda potkávám nad tématy, které je "pálí" a šiju jim je
+              na míru. Příklady workshopů tu:
             </p>
           </div>
           <div class="workshop-grid">
@@ -2161,8 +2173,8 @@ Terapeutická sezení jsou především autentická lidská setkání. Společn�
                   ><span class="workshop-summary-title"
                     >Kotva v bouři: první psychická pomoc, když jde do tuhého</span
                   ><span class="workshop-card-teaser"
-                    >Pro dospělé nebo pro dospívající. Jak se stát oporou pro lidi kolem sebe po nehodě,
-                    úrazu, přírodní katastrofě nebo jiné krizi.</span
+                    >Pro dospělé nebo pro dospívající. Jak se stát oporou pro lidi kolem sebe po
+                    nehodě, úrazu, přírodní katastrofě nebo jiné krizi.</span
                   >
                 </summary>
                 <div class="workshop-inline-content">
@@ -2196,8 +2208,8 @@ Terapeutická sezení jsou především autentická lidská setkání. Společn�
                     <ul class="workshop-bullets">
                       <li>
                         Pro dosp&#237;vaj&#237;c&#237; i dospěl&#233;, kteř&#237; chtěj&#237; vědět,
-                        jak zachovat pomoci. Workshopy pro
-                        dosp&#237;vaj&#237;c&#237; a dospěl&#233; se konaj&#237; zvl&#225;šť.
+                        jak zachovat pomoci. Workshopy pro dosp&#237;vaj&#237;c&#237; a dospěl&#233;
+                        se konaj&#237; zvl&#225;šť.
                       </li>
                       <li>
                         Pro všechny, kteř&#237; chtěj&#237; b&#253;t připraveni na krizov&#233;
@@ -2266,8 +2278,8 @@ Terapeutická sezení jsou především autentická lidská setkání. Společn�
                   <div class="workshop-detail-content">
                     <p class="workshop-detail-lead">
                       Poodhalte z&#225;voj terapeutick&#233; m&#237;stnosti. Praktick&#253;
-                      dvouhodinov&#253; průvodce procesem terapie pro ty, kteř&#237;
-                      chtěj&#237; vědět, co psychoterapie (ne)obn&#225;š&#237;.
+                      dvouhodinov&#253; průvodce procesem terapie pro ty, kteř&#237; chtěj&#237;
+                      vědět, co psychoterapie (ne)obn&#225;š&#237;.
                     </p>
                     <p>
                       Vstup do psychoterapie b&#253;v&#225; často spojen s obavami z nezn&#225;ma.
@@ -2311,8 +2323,8 @@ Terapeutická sezení jsou především autentická lidská setkání. Společn�
                   <span class="workshop-number" aria-hidden="true">03</span
                   ><span class="workshop-summary-title">Do světa dětí tvořivostí a hrou</span
                   ><span class="workshop-card-teaser"
-                    >Pro rodiče a pedagogy. Tvořivé terapeutické techniky inspirované přístupem V. Oaklander,
-                    bez nutnosti terapeutického vzdělání.</span
+                    >Pro rodiče a pedagogy. Tvořivé terapeutické techniky inspirované přístupem V.
+                    Oaklander, bez nutnosti terapeutického vzdělání.</span
                   >
                 </summary>
                 <div class="workshop-inline-content">
@@ -2414,8 +2426,8 @@ Terapeutická sezení jsou především autentická lidská setkání. Společn�
           <div class="services">
             <article class="service">
               <p>
-                Délka: 50 minut<br />Cena: 1 300 - 1500 Kč (hotově nebo na účet)<br />Místo: Dobříš –
-                Větrník
+                Délka: 50 minut<br />Cena: 1 300 - 1500 Kč (hotově nebo na účet)<br />Místo: Dobříš
+                – Větrník
               </p>
               <p></p>
               <p class="has-accent-marker">
@@ -2428,9 +2440,8 @@ Terapeutická sezení jsou především autentická lidská setkání. Společn�
             <article class="service">
               <h3 class="serif">Workshopy a besedy</h3>
               <p>
-                Cena a délka: dle Vašich i mých možností <br />Jazyk:
-                čeština, angličtina, němčina<br />Místo: u vás, nebo u mě na Dobříši, pokud jste
-                skupina do 6 lidí
+                Cena a délka: dle Vašich i mých možností <br />Jazyk: čeština, angličtina,
+                němčina<br />Místo: u vás, nebo u mě na Dobříši, pokud jste skupina do 6 lidí
               </p>
             </article>
           </div>
@@ -2439,17 +2450,12 @@ Terapeutická sezení jsou především autentická lidská setkání. Společn�
       <section class="intro wrap" id="uvod">
         <div class="intro-grid">
           <div class="intro-visual">
-            <svg class="sun-art" viewBox="0 0 240 240" fill="none" aria-hidden="true">
-              <circle cx="120" cy="112" r="57" stroke="#c9a868" stroke-width="1.5" />
-              <path
-                d="M120 70v84M120 70c-29 17-43 37-49 64h49m0-64c25 17 37 37 43 64h-43m0-64 15 64"
-                stroke="#899e8c"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-              <circle cx="173" cy="65" r="7" fill="#e8ca8d" />
-            </svg>
+            <img
+              class="profile-photo"
+              src="zuzana-krasova.jpeg"
+              alt="Zuzana Krásová"
+              loading="lazy"
+            />
             <div class="visual-caption">Zuzana Krásová</div>
           </div>
           <div class="intro-copy">
@@ -2460,19 +2466,25 @@ Terapeutická sezení jsou především autentická lidská setkání. Společn�
               dospívajícími a jejich rodiči v rámci terapeutických setkání.
             </p>
             <p>
-              Základy mého přístupu k terapii leží v Gestaltu. Absolvovala jsem prezenční část pětiletého výcviku a postgraduální výcvik pro práci s dětmi a dospívajícími v pražském Gestalt institutu.
+              Základy mého přístupu k terapii leží v Gestaltu. Absolvovala jsem prezenční část
+              pětiletého výcviku a postgraduální výcvik pro práci s dětmi a dospívajícími v pražském
+              Gestalt institutu.
             </p>
             <p>
               Psychologii jsem vystudovala na univerzitě v Regensburgu v Německu. Součástí mé cesty
               byla řada studijních a pracovních aktivit na univerzitách a v organizacích v
-              zahraničí. I v současnosti ráda vyrážím do ciziny vést workshopy a besedy a potkávat se s lidmi z jiných kontextů a kultur.
+              zahraničí. I v současnosti ráda vyrážím do ciziny vést workshopy a besedy a potkávat
+              se s lidmi z jiných kontextů a kultur.
             </p>
             <p>
-              Je mi blízké vytvářet prostory, které propojují rodiny do živoucích synergií a podporují mladé lidi v jejich jediněčných, osobitých cestách. V roce 2023 jsem proto založila a
-              vedu nerejstříkovou druhostupňovou Komunitní školu DobroDruzi na Mníšku pod Brdy.
+              Je mi blízké vytvářet prostory, které propojují rodiny do živoucích synergií a
+              podporují mladé lidi v jejich jediněčných, osobitých cestách. V roce 2023 jsem proto
+              založila a vedu nerejstříkovou druhostupňovou Komunitní školu DobroDruzi na Mníšku pod
+              Brdy.
             </p>
             <p>
-              V rámci Gestalt institutu Praha se podílím na vzdělávání a rozvoji budoucích dětských terapeutů a terapeutek.
+              V rámci Gestalt institutu Praha se podílím na vzdělávání a rozvoji budoucích dětských
+              terapeutů a terapeutek.
             </p>
           </div>
         </div>
