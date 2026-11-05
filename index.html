@@ -1888,6 +1888,34 @@
         border-radius: 999px;
         box-shadow: 0 4px 16px #263a2c18;
       }
+      .about-grid {
+        grid-template-columns: 0.9fr 1.1fr;
+        max-width: none;
+        margin-inline: auto;
+      }
+      .intro-visual.room-visual {
+        min-height: 0;
+        height: auto;
+        aspect-ratio: 1.5;
+        border-radius: 24px;
+      }
+      .intro-visual.room-visual::before,
+      .intro-visual.room-visual::after {
+        display: none;
+      }
+      .intro-visual.room-visual .profile-photo {
+        object-position: center;
+      }
+      @media (max-width: 620px) {
+        .about-grid {
+          grid-template-columns: 1fr;
+        }
+        .intro-visual.room-visual {
+          width: 100%;
+          min-height: 0;
+          aspect-ratio: 1.25;
+        }
+      }
     </style>
   </head>
   <body>
@@ -1990,17 +2018,16 @@
               alt="Zuzana Krásová"
               loading="lazy"
             />
-            <div class="visual-caption">Zuzana Krásová</div>
           </div>
           <div class="intro-copy">
             <p class="lead">
               Terapeutická sezení jsou především autentická lidská setkání. Společně v nich tvoříme
               prostor, kde dítě nebo dospívající může skrze dialog nebo skrze tvořivé aktivity
-              vyjádřit přesně to, co v něm zrovna žije, objevovat svou vlastní sílu a vynést na světlo
-              ty části sebe sama, které musely být uzamčeny. Ať se moji klienti nacházejí kdekoli,
-              vydávám se za nimi právě tam. Cílem není dokonalý člověk, ale mladá osobnost s pevnou
-              vnitřní oporou, která je plně přítomná ve svém prožívání a v kontaktu se sebou i
-              světem.
+              vyjádřit přesně to, co v něm zrovna žije, objevovat svou vlastní sílu a vynést na
+              světlo ty části sebe sama, které musely být uzamčeny. Ať se moji klienti nacházejí
+              kdekoli, vydávám se za nimi právě tam. Cílem není dokonalý člověk, ale mladá osobnost
+              s pevnou vnitřní oporou, která je plně přítomná ve svém prožívání a v kontaktu se
+              sebou i světem.
             </p>
           </div>
         </div>
@@ -2021,7 +2048,7 @@
             <article class="service">
               <div class="service-icon" aria-hidden="true">⌂</div>
               <h3 class="serif">Rodiče</h3>
-              <p>Rodiče, ideálně oba, jsou součástí procesu. </p>
+              <p>Rodiče, ideálně oba, jsou součástí procesu.</p>
               <a class="tiny-link" href="#rodice">Podpora pro rodiče <span>→</span></a>
             </article>
             <article class="service">
@@ -2095,8 +2122,9 @@
               Když dítě prožívá něco náročného, často to neumí vyjádřit a zpracovat pomocí slov. A
               tak mimo mluvení k terapii využíváme tvoření, kreslení, psaní a vyprávění příběhů.
               Hrajeme hry. Využíváme terapeutické karty a také figurky, plyšáky a maňásky. S
-              některými se vydáváme do vizualizací a snů. Stavíme bunkry a pelíšky. Zápasíme, blbneme a
-              hýbeme se. Někdy naopak plánujeme konkrétní kroky, tvoříme seznamy a mindmapy.
+              některými se vydáváme do vizualizací a snů. Stavíme bunkry a pelíšky. Zápasíme,
+              blbneme a hýbeme se. Někdy naopak plánujeme konkrétní kroky, tvoříme seznamy a
+              mindmapy.
             </p>
           </div>
           <div class="services">
@@ -2104,8 +2132,8 @@
               <p>
                 Dítě má šanci se v terapii zažít jinak a nově chápat sám sebe. Buduje důvěru ve své
                 tělo a v jeho signály. Své emoce prožívá naplno a zároveň se jim nepoddává - jsou
-                pro něj informací, začíná je používat jako ukazatele na cestě. Nachází oporu
-                sámo v sobě a to mu umožňuje postavit se plněji do života a do vztahů.
+                pro něj informací, začíná je používat jako ukazatele na cestě. Nachází oporu sámo v
+                sobě a to mu umožňuje postavit se plněji do života a do vztahů.
               </p>
               <p></p>
               <p></p>
@@ -2125,7 +2153,10 @@
           <div class="services">
             <article class="service">
               <p>
-Rodiče dětí a dospívajících přicházejí někdy zvědaví, a často frustrovaní, unavení nebo vyděšení. Pomáhá jim, když lépe rozumí světu svého dítěte a sobě samotnému ve vztahu k dítěti a když mají představu, co mohou sami zkoušet dělat jinak, aby ho podpořili.  
+                Rodiče dětí a dospívajících přicházejí někdy zvědaví, a často frustrovaní, unavení
+                nebo vyděšení. Pomáhá jim, když lépe rozumí světu svého dítěte a sobě samotnému ve
+                vztahu k dítěti a když mají představu, co mohou sami zkoušet dělat jinak, aby ho
+                podpořili.
               </p>
               <p></p>
               <p id="rodice-uvod" class="has-accent-marker">
@@ -2159,7 +2190,8 @@ Rodiče dětí a dospívajících přicházejí někdy zvědaví, a často frust
           <div class="section-head">
             <h2 class="serif">Workshopy</h2>
             <p>
-              S dospělými i dospívajícími se ráda potkávám nad tématy, které je "pálí". Příklady workshopů tu:
+              S dospělými i dospívajícími se ráda potkávám nad tématy, které je "pálí". Příklady
+              workshopů tu:
             </p>
           </div>
           <div class="workshop-grid">
@@ -2369,7 +2401,8 @@ Rodiče dětí a dospívajících přicházejí někdy zvědaví, a často frust
                       </li>
                       <li>
                         Uvolnit „zaseklou“ energii a napět&#237;, kter&#233; se může projevovat
-                        např. vztek&#225;n&#237;m, strachem, v&#237rav&#253;mi myšlenkami, nepozornost&#237; nebo apati&#237;.
+                        např. vztek&#225;n&#237;m, strachem, v&#237;rav&#253;mi myšlenkami,
+                        nepozornost&#237; nebo apati&#237;.
                       </li>
                       <li>
                         Z&#237;skat nadhled a dostat se do kontaktu s&#160;nov&#253;mi možnostmi.
@@ -2445,15 +2478,15 @@ Rodiče dětí a dospívajících přicházejí někdy zvědaví, a často frust
         </div>
       </section>
       <section class="intro wrap" id="uvod">
-        <div class="intro-grid">
-          <div class="intro-visual">
+        <div class="intro-grid about-grid">
+          <div class="intro-visual room-visual">
             <img
               class="profile-photo"
-              src="zuzana-krasova.jpeg"
-              alt="Zuzana Krásová"
+              src="terapeuticky-prostor.jpeg"
+              alt="Terapeutický prostor pro setkávání"
               loading="lazy"
             />
-            <div class="visual-caption">Zuzana Krásová</div>
+            <div class="visual-caption">Prostor pro setkávání</div>
           </div>
           <div class="intro-copy">
             <div class="eyebrow">O mně</div>
@@ -2474,10 +2507,10 @@ Rodiče dětí a dospívajících přicházejí někdy zvědaví, a často frust
               se s dospělými i dětmi z jiných kontextů a kultur.
             </p>
             <p>
-              Věřím v sílu komunit a je mi blízké vytvářit prostory, které propojují rodiny do živoucích synergií a
-              podporují mladé lidi v jejich jedinečných, osobitých cestách. V roce 2023 jsem proto
-              založila a vedu nerejstříkovou druhostupňovou Komunitní školu DobroDruzi na Mníšku pod
-              Brdy.
+              Věřím v sílu komunit a je mi blízké vytvářit prostory, které propojují rodiny do
+              živoucích synergií a podporují mladé lidi v jejich jedinečných, osobitých cestách. V
+              roce 2023 jsem proto založila a vedu nerejstříkovou druhostupňovou Komunitní školu
+              DobroDruzi na Mníšku pod Brdy.
             </p>
             <p>
               V rámci Gestalt institutu Praha se podílím na vzdělávání a rozvoji budoucích dětských
