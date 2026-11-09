@@ -144,6 +144,12 @@
         font-family: var(--serif);
         font-size: 1.2rem;
       }
+      .brand-butterfly {
+        display: block;
+        width: 27px;
+        height: 27px;
+        color: var(--gold);
+      }
       .brand-name {
         font-family: var(--serif);
         font-size: 1.2rem;
@@ -645,6 +651,7 @@
           width: 37px;
           height: 37px;
         }
+  
         .brand-name {
           font-size: 1rem;
         }
@@ -1916,6 +1923,24 @@
           aspect-ratio: 1.25;
         }
       }
+      .approach-art.approach-photo {
+        min-height: 0;
+        aspect-ratio: 16 / 9;
+        margin: 0;
+        border-radius: 24px;
+        background: transparent;
+      }
+      .approach-photo img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      @media (max-width: 620px) {
+        .approach-art.approach-photo {
+          min-height: 0;
+        }
+      }
     </style>
   </head>
   <body>
@@ -1923,7 +1948,7 @@
     <header>
       <nav class="nav wrap" aria-label="Hlavní navigace">
         <a class="brand" href="#domu" aria-label="Zuzana Krásová, úvodní stránka"
-          ><span class="brand-mark" aria-hidden="true">zk</span
+          ><span class="brand-mark" aria-hidden="true"><svg class="brand-butterfly" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M16 13.5c-1.7-2.4-4.2-3.6-5.5-2.8-1.3.8.3 3.5 2.4 4.5m5.1-1.7c1.7-2.4 4.2-3.6 5.5-2.8 1.3.8-.3 3.5-2.4 4.5M16 16c-1.8-.7-3.5-.2-3.7 1-.2 1.3 1.6 2.5 3.4 2m.6-3c1.8-.7 3.5-.2 3.7 1 .2 1.3-1.6 2.5-3.4 2M16 12v11m0-8.7-1.8-1.5m1.8 1.5 1.8-1.5" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/></svg></span
           ><span class="brand-name">Zuzana Krásová<small>terapie · workshopy</small></span></a
         >
         <button
@@ -2099,17 +2124,13 @@
               z hnízda“.
             </p>
           </div>
-          <div
-            class="approach-art"
-            data-parallax="0.08"
-            aria-label="Ilustrace cesty přes zelené kopce za sluncem"
-          >
-            <div class="little-sun"></div>
-            <div class="art-phrase">Věřím v moudrost cesty každého z nás.</div>
-            <div class="hill"></div>
-            <div class="hill two"></div>
-            <div class="path"></div>
-          </div>
+          <figure class="approach-art approach-photo">
+            <img
+              src="kresba-tvare.jpeg"
+              alt="Barevná kresba různých lidských tváří"
+              loading="lazy"
+            />
+          </figure>
         </div>
       </section>
       <section class="offer prose-section children-section" id="deti">
@@ -2484,7 +2505,7 @@
               alt="Terapeutický prostor pro setkávání"
               loading="lazy"
             />
-            <div class="visual-caption">Prostor pro setkávání</div>
+
           </div>
           <div class="intro-copy">
             <div class="eyebrow">O mně</div>
@@ -2652,3 +2673,8 @@
     </script>
   </body>
 </html>
+
+
+
+
+
